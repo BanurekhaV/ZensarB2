@@ -1,1 +1,22 @@
-This is a sample file to understand git transactions
+This is a sample file to understand git transactions. Steps for git operations
+
+1. Either signin or signup to github.
+2. create a new repository (public) in github
+3. After creating a new repo, copy the URL address
+
+1. Create a directory/folder in your working drive 
+2. move to that newly created director (cd <name of the directory>)
+3. git init and press enter
+4. You can create a simple file (a text file and type some data and save it)
+5. git add. (to add the newly created file to a stage area)
+6. git commit -m"<some meaningful name>"
+
+7. In order to sync the Local repo with remote repo, type the command
+ git remote add <somename>(orign) and then paste the url address
+8. to check the sync, type git remote -v
+9. Then push the added contents to remote by typing
+git push origin master
+
+10. Then observe that the file is available in the remote repo
+
+
