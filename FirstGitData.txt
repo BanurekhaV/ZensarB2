@@ -19,4 +19,6 @@ git push origin master
 
 10. Then observe that the file is available in the remote repo
 
+11. If we want to get the latest files from the remote repo to our local repo then type
+git pull origin master
 
