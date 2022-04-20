@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleAppDay3.Employee</StartupObject>
+    <StartupObject>ConsoleAppDay3.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
