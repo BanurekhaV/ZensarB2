@@ -1,0 +1,117 @@
+git remote add origin <https url>
+
+Local Repo  -  Matching Remote Repo
+
+Batch 2     -   ZensarB2
+
+Newdir      -   
+
+Datatypes 
+
+1. Value Types : byte,short,int,long,float,double,char,boolean(user defined value types -struct,enum)
+2. Reference Types : (predefined reference type -string,object) class,interface,delegate,event
+
+object is the base class for all the classes.
+
+strings are immutable - 
+stringBuilder - are mutable strings
+
+All reference types will have nullreference until a valid reference is given
+
+C# supports :
+
+arithmetic operators - +,-,/,*,%
+relational operators - >,<,>=,<=,!=,<>,=
+logical operators - not, and, or
+
+if((age<=20) && (marks>80)) //both conditions to be true
+
+if((age<=20) || (marks>80)) //any one condition to be true
+
+if(!age<=20) // age should not be <=20
+
+totalmarks+= Marks; totalmarks-=Marks;
+totalmarks = totalmarks+Marks;
+
+-- Switch
+
+
+grade {A+,A,B+,B,C,D,E}
+
+if(grade=="A+"){ cw("Outstanding")}
+else if(grade=='A'){ cw("excellent")}
+
+switch(grade)
+{
+case A+:
+case A :
+case B+ :
+}
+
+debug mode:
+
+
+1.Write a program in C# to accept the name of the user and greet the user as:
+	“Hi! username 
+	Welcome to the world of C#”
+
+
+2.Accept a number from the user and display whether the given number is an odd number or even number.
+
+
+3. Create a program, which accepts 3 numbers as input from the user and prints the largest and smallest of 3 numbers.
+
+
+Jump statements :
+
+break : come out of the loop/function/switch case
+continue
+goto
+return
+throw
+
+Iteration: Repeation
+
+Loop till some condition is true  value is true
+
+Loop for some number of times  10 , 5 
+
+Loop till the user wishes  Y/N
+
+while, do while, for, foreach
+
+All loops will have 3 statements ( initialization - one tie in the beginning
+, condition - evaluated to true or false, if true execute the bosy of the loop, 
+if false exit the loop, iterator - change the initial value)
+
+Unary operator - one operand (i++ = i=i+1)1+1=2   ++i
+
+Binary Operator - two operands (a+b)
+
+Ternary Operator - (age<=20?"outstanding":"invalid")
+
+implicit type conversion - is done by the compiler
+explicit type conversion - is done by the programmer
+
+v.chougule@zensar.com
+v.yepuri@zensar.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
