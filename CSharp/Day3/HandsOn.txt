@@ -1,0 +1,62 @@
+1. Create a class called Accounts which has the following field
+int Account no, 
+string Customer name, 
+string Account type, (savings or  current)
+float amount, 
+float balance
+
+write 2 functions:
+
+public void credit(float amt) - logic to add amount to balance
+
+public void debit(float amt) - logic to reduce amount from balance
+
+public void Showdetails() - to display the values.
+
+Pass the other information like Acount no,name,acc type,balance  through constructor
+
+
+D->Deposit
+W->Withdrawal
+
+
+	-If transaction type is deposit call the credit(int amount) function and update balance
+	-If transaction type is withdraw call debit(int amt)function and update balance
+
+
+2. Create a class called Products with 
+
+Productid, Productname, Price, Quantity as fields
+
+write constructor/s to initialize the data
+
+write a destructor 
+
+write a static method to display the details of the product
+
+write a public method to display the details of the products
+
+Write another class called ProductTest which has a main method 
+  1. Create 2 objects of Products class, and invoke constructors
+  2. call the other functions and see the results
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
