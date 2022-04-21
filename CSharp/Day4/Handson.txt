@@ -1,0 +1,42 @@
+1. Write a program in C# Sharp to store elements in an array and print it. 
+
+Test Data:
+Input 10 elements in the array:
+element - 0 : 1
+element - 1 : 1
+element - 2 : 2
+.......
+Expected Output :
+Elements in array are: 1 1 2 3 4 5 6 7 8 9
+
+2. Write a program in C# Sharp to read n number of values in an array and display it in reverse order. 
+
+Test Data :
+Input the number of elements to store in the array :3
+Input 3 number of elements in the array :
+element - 0 : 2
+element - 1 : 5
+element - 2 : 7
+
+Expected Output:
+The values store into the array are:
+2 5 7
+The values store into the array in reverse are :
+7 5 2  (hint: use for(i=n-1;i>=0;i--) for reverse order)
+
+3. Write a program in C# Sharp to copy the elements one array into another array. 
+
+Test Data :
+Input the number of elements to be stored in the array :3
+Input 3 elements in the array :
+element - 0 : 15
+element - 1 : 10
+element - 2 : 12
+
+Expected Output:
+The elements stored in the first array are :
+15 10 12
+The elements copied into the second array are :
+15 10 12   (hint : use 2 arrays)
+
+
