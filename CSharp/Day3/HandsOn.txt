@@ -1,11 +1,11 @@
 1. Create a class called Accounts which has the following field
-int Account no, 
+int Account no,  
 string Customer name, 
 string Account type, (savings or  current)
-float amount, 
+float amount,  -- optional
 float balance
 
-write 2 functions:
+write 3 functions:
 
 public void credit(float amt) - logic to add amount to balance
 
@@ -13,8 +13,8 @@ public void debit(float amt) - logic to reduce amount from balance
 
 public void Showdetails() - to display the values.
 
-Pass the other information like Acount no,name,acc type,balance  through constructor
-
+Pass the other information like Account no,name,acc type,balance  through constructor
+    Account(100,"Banurekha","Savings",900)
 
 D->Deposit
 W->Withdrawal
