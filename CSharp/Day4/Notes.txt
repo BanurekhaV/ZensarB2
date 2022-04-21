@@ -1,0 +1,41 @@
+To Link the Local Repository to the Global/Remote/ Repository
+
+we have to sync both the repositories by giving the git command as
+ localrepo: git remote add <alias name> <url>
+                           training-assignment
+                            origin
+
+to test the above links of 2 repositories type
+
+git remote -v and check
+
+training-assignment   https://github.com/Kranthissk07/training-assignment.git (fetch)
+training-assignment   https://github.com/Kranthissk07/training-assignment.git (push)
+
+git push <alias name> master - (branch)
+
+Arrays : are reference type variables since the array variable wil always store the address of the starting location i.e. index 0
+int[]arr={1,2,3,45};  or
+int[] arr;
+arr= new int[5]; arr[0]=3;arr[1]=5; ....
+
+int[,] twodimarray= new int[3,7]
+                           [row][col]
+twodimarray[0][0]=10
+twodimarray[0][1]=12
+
+twodimarray[1][0]=15
+
+Jagged Array : int [][]
+
+for, while, dowhile, foreach
+
+Methods and Parameters :
+Parameters or Arguments are variables/objects that are passed to a function as input
+return value : is the data/value that is given back by the function
+
+ 1. call by value - a copy of the data is sent to the called function 
+ 2. call by ref - the location of the data is sent to the called function
+ 3. out parameters - 
+        All functions may or may not return any value. But if a function is returning a value, then it can be only one value. If we need multiple values from a function,we use out parameters
+ 4. params : 
