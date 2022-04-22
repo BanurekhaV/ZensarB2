@@ -1,7 +1,6 @@
 E:\Banu\Zensar\Batch 2\CSharp\Day5\ConsoleAppDay5\ConsoleAppDay5\bin\Debug\ConsoleAppDay5.exe.config
 E:\Banu\Zensar\Batch 2\CSharp\Day5\ConsoleAppDay5\ConsoleAppDay5\bin\Debug\ConsoleAppDay5.exe
 E:\Banu\Zensar\Batch 2\CSharp\Day5\ConsoleAppDay5\ConsoleAppDay5\bin\Debug\ConsoleAppDay5.pdb
-E:\Banu\Zensar\Batch 2\CSharp\Day5\ConsoleAppDay5\ConsoleAppDay5\obj\Debug\ConsoleAppDay5.csproj.AssemblyReference.cache
 E:\Banu\Zensar\Batch 2\CSharp\Day5\ConsoleAppDay5\ConsoleAppDay5\obj\Debug\ConsoleAppDay5.csproj.CoreCompileInputs.cache
 E:\Banu\Zensar\Batch 2\CSharp\Day5\ConsoleAppDay5\ConsoleAppDay5\obj\Debug\ConsoleAppDay5.exe
 E:\Banu\Zensar\Batch 2\CSharp\Day5\ConsoleAppDay5\ConsoleAppDay5\obj\Debug\ConsoleAppDay5.pdb

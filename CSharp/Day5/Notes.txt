@@ -1,0 +1,91 @@
+Function Signature
+
+value types as parameters or reference types as parameters
+
+Arrays are also reference types
+
+int [] myarray=new int[]{1,2,3,4,5};
+
+public int add(int[] a)
+{
+ for(int i=0; i<a.Length;i++;
+ {
+  int sum = sum+=a[i];
+ }
+}
+
+int total=add(employee e)
+
+
+public int add2nos(ref int a, ref int b)
+{
+
+}
+
+int x=5; int y=10;
+int sum=add2nos(ref x, ref y);
+
+
+readonly : are variables that are declared with the keyword readonly. 
+- They can be initialized either during declaration or in the constructor, but no where else.
+- We cannot change the value of readonly variable after initializing. - The behaviour of a readonly variable will be similar to the non -static variable. In the sense, each object maintains a seperate copy of the readonly variale.
+- The only difference is non-static variable values can be changed, but readonly variable values cannot be changed
+
+
+constant : A constant variable has a fixed value given at the time of declaration only. 
+-is declared using a keyword const
+-The value will be available for the entire class.
+- cannot be changed
+
+Properties: extensions of fields
+They have to be public
+They have the same datatype as that of the field
+They donot occupy memory or space
+They have accessors that help in setting or getting data of the field
+These accessors are called as get and set
+
+Either you can write the properties manually or make it automatic
+
+struct
+enum - enumerators ( a list of or a sequence of )
+
+enumerate a series of days,month,cities,colors,places etc
+enum cities{Ahmedabad=4,Bangalore=2,Chennai=1,Delhi=3,Hyderabad=5,Nagpur}
+
+Access Specifiers:
+1. private: accessible only within the class where they are declared
+2. public: accessible anywhere(in any assembly) with the help of the class reference and object
+3. internal : accessible only within the current assembly
+4. protected : accessible within the class and all derived classes (child/inherited classes)irrespective of the assembly
+5. internal protected or protected internal: is a combination of both internal and protected 
+
+Note: All classes are internal by default
+      All members of the class are private by default
+
+Inheritance : extension and reuse
+1. Single Inheritance
+2. Multilevel inheritance  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

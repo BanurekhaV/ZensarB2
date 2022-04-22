@@ -43,6 +43,7 @@ namespace ConsoleAppDay5
         public void showdetails()
         {
             Console.WriteLine($"Empcode {empcode}, Name {empname} and age {age}");
+           
         }
     }
     class PropertiesEg
@@ -77,6 +78,8 @@ namespace ConsoleAppDay5
 
             Console.WriteLine("Mondays : {0}",weekstart);
             Console.WriteLine("Fridays: {0}",weekend);
+            
+
             Console.Read();
         }
 

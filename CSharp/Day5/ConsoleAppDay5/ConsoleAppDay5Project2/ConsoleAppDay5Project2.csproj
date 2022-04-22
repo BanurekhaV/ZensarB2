@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7B7CF3FC-0C69-402F-859A-60310246252A}</ProjectGuid>
+    <ProjectGuid>{50F6ABDE-1DB6-434E-BC41-76FE7209748F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ConsoleAppDay5</RootNamespace>
-    <AssemblyName>ConsoleAppDay5</AssemblyName>
+    <RootNamespace>ConsoleAppDay5Project2</RootNamespace>
+    <AssemblyName>ConsoleAppDay5Project2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,9 +32,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>ConsoleAppDay5.TestClass</StartupObject>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,15 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccessSpecifiersEg.cs" />
-    <Compile Include="MultilevelInheritanceEg.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="PropertiesEg.cs" />
+    <Compile Include="AccessChecker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReadOnlyEg.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConsoleAppDay5\ConsoleAppDay5.csproj">
+      <Project>{7b7cf3fc-0c69-402f-859a-60310246252a}</Project>
+      <Name>ConsoleAppDay5</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
