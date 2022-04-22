@@ -41,10 +41,10 @@ namespace ConsoleAppDay5
 
     class AllTypesExample
     {
-       public int x; // Non static field
+       public int x; // Non static field or instance
        public static int y=125; //static field
       public  const float myconst = 25.55f; //const field
-      public  readonly bool flag; //readonly field
+      public  readonly bool flag; //readonly field and instance
 
         public AllTypesExample(int x, bool b)
         {
