@@ -1,0 +1,32 @@
+1. Create a class called student which has data members like rollno, name, class, semester, branch, int [] marks=new int marks [5](marks of 5 subjects)
+. Hint:(you can initialize the marks array with marks )
+
+-Write a method called displayResult, which should calculate the average marks as below :(Hint : use loops to access the marks)
+	-If marks of any one subject is less than 35 print result as failed
+	-If marks of all subject is >35 but average is < 50 then also print result as failed
+	-If avg > 50 then print result as passed.
+-Pass the details of student like rollno, name, class, semester, branch through constructor
+-Write a displayData method to display all values.
+
+
+2. Write a c# program that creates a class called car with 
+    int carno, string carname, string cartype (xuv,suv etc..), double cost
+
+ - create properties for all the above fields. 
+ - initialize all fields through a parameterized constructor
+ - make the cost property readonly
+ - write a method to display the values before and after changes 
+
+
+3. Write a C# program that calculates multiple interest amounts for a given loan amount 
+ Accept loanamount from the user and pass it to a loanCalculator(double loanamt) function, that sends all the interest amounts to the caller
+
+ Test data:
+Loanamount= 200000
+
+Expected Output:
+
+5% interest= 10000/-
+7% interest = 14000/-
+10% interest=20000/-
+
