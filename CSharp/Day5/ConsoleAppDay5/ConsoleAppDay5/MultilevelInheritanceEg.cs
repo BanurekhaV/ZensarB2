@@ -10,23 +10,52 @@ namespace ConsoleAppDay5
     {
         protected int data;
 
+        Parent() //usedefined default constructor
+        {
+
+        }
         public Parent(int a)
         {
             data = a;
+            Console.WriteLine("Parents Data is :" + data);
+        }
+
+        ~Parent()
+        { 
+            Console.WriteLine("Parent saying Bye");
+            Console.Read();
         }
     }
 
     class Child : Parent
     {
-        
-        public Child(int n):base(n) //instantiating a base class through the child class constructor
+        int data2;
+        public Child(int x):base(x)
         {
-            data = n;
+            data2 = x;
+            data = 100;
+            Console.WriteLine("Childs Data is: " + data2 + " " + this.data);
         }
 
+        public Child(int x, int y):base(y)
+        {
+            data2 = x;
+            data = 200;
+            Console.WriteLine("Childs Data thru 2nd constructor is: " + data2 + " " +this.data);
+        }
+        ~Child()
+        {
+            Console.WriteLine("Child saying Bye");
+            Console.Read();
+        }
     }
     class MultilevelInheritanceEg
     {
-
+        static void Main()
+        {
+            Child c = new Child(10);
+            Child c1 = new Child(20, 25);
+            Console.Read();
+        }
     }
 }
