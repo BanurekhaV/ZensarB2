@@ -1,0 +1,89 @@
+Inheritance : Chain
+
+
+Base class has to be constructed first before the child class
+Hence we will have to invoke the base class constructor through the child class ( whenever the base class has declared and defined constructors of its own)
+
+-Default Constructor : That which is provided by the framework/compiler
+
+-User Defined Default Constructor : Wriiten by the programmer for a class that does not take any parameters
+
+-Parameterized Constructor : written that takes parameters
+
+-Copy constructor - That takes an parameter of the class type. Used to copy one objects data into another. Initializing a new object with the values of the existing object 
+
+-static constuctor - are used to initialize the static fields.
+                    there can be only one static constructor/class
+                    can access only the static fields
+                    we cannot give any access specifier/modifier
+                    will be invoked only once
+
+-private constructor- will not be able to create any objects
+
+int i = 100;
+            float f = i;
+            f = 12345487657.457f;
+              i = (int)f; //explicit typecast and hence there is data loss
+            //i = Convert.ToInt32(f); //conversion function
+            Console.WriteLine(i);
+            Console.Read();
+
+Typecast - will give the minimum value that an int can hold
+Conversion : Throws an exception
+
+parse - will parse the string data and check if it can be converted to a specific datatype
+
+
+Name/Method hiding : when a child class re-declares the fields or functions that is already declared in the parent class by hiding it from the parent
+
+Classes are:
+
+1. internal class - accessible within the assembly
+2. public class - accessible within any assembly (just add a refernce, if in another assembly)
+3. static class - that cannot be instantiated nor inherited. Will have only static memebers.Can be used with the class name
+4. sealed class - that can be instantiated, but cannot be inherited.
+5. Abstract class - Cannot be instantiated, but needs to be inherited
+6. partial class - single class functionality implemented into multiples files. Can be combined into a single class file on compilation
+
+Inheritance :
+1. single or multilevel inheritance
+2. name hiding /method hiding
+3. base class constructor invocation thru derived class
+
+Polymorphism:
+
+1. overriding - extension of the base class functionalities
+       the base class has to mark the function/s as virtual
+       the child class has to extend the base class function using a keyword 'override'
+       the signature has to be the same as that of the base class
+       overriding is between base and derived class(2 classes)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int.parse, float.parse(
