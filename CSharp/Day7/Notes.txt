@@ -1,0 +1,104 @@
+Polymorphism: achieved through concepts like overloading and overriding
+ 2 types: 1. Static Polymorphism(early binding/static binding)- compiler resolves the function calls
+       eg: Overloading 
+          - Methods and Operators(arithmetic,relational,logical,increment,decrement)
+          - It is always seen in the same class
+          - Signatures have to be different
+          2. Dynamic Polymorphism(late binding/late binding)- runtime resolves the function calls
+eg: Overriding
+          - Methods are overridden
+          - It is always between base and derived classes
+          - Signatutes have to be same
+
+       Covariance : Where a base class object can be made to point to a derived class 
+
+
+i++
+++i
+int a,b,c;
+c=a+b //system can add two system defined datatypes
+
+Employee e1,e2,e3;
+e3=e1+e2; //system cannot add 2 user defined datatypes
+
+overload the + Operator    
+- things to keep in mind while overloading any operator :
+    1. The return type should always be the class type
+    2. the keyword 'operator' should be used before the actual operator symbol
+    3. depending upon the operator, we should pass the required parameters
+
+Abstract Methods: are methods that do not have any definitions/function body/implementation/code
+ - they have to be marked as abstract
+
+Abstract Class:A class that has atleast one abstract method. Is a class that can have both abstract as well as non-abstract method
+ - abstract classes cannot be instantiated 
+ - abstract class objects can be made to point to the derived classes
+ - abstract classes have to be inherited/derived
+ - the derived class/classes have to provide implementation to all the abstract method of the base abstract class
+
+
+Interface: is like a class.
+- all members of the interface are public by default 
+- has only abstract methods
+- we need not mark the methods of the interface as abstract
+- interfaces cannot be instantiated, but a reference of interface can be used
+- can have methods and properties(that are abstract)
+- interface/s have to be implemented by the derived class
+- a class can inherit/implement from one or more interfaces
+- a class has to implement all the methods of the interface/s
+- an interface can inherit from other interfaces
+
+
+Explicit Implementation of interface:
+When a class inherits from more than one interface, and if those interfaces have a common member, then the class can do explicit implementation
+- by qualifying the method with the interface name
+- point to remember : whenever we qualify a method with the name of the interface, that method cannot have public modifier
+
+Exceptions: are runtime /logical errors that is thrown to the application, exposing the source code. 
+To handle the exceptions, we use 
+- try block - a set of executable statements that might throw exceptions
+- catch block - like a function where we tell how to manage the exception
+- finally block - that will get executed whether there is any exception or not
+Exceptions are classes. There are several exception classes in the framework for different types of exceptions
+- the base class for all exception classes is Exception
+Exception handling is not to rectify/correct the problem. It is to avoid exposing the code and also to give a meaningful error messages to the user that he can understand
+  
+
+User Defined Exceptions : you should define a class that inherits ApplicationException
+
+class myexception : ApplicationException
+{
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

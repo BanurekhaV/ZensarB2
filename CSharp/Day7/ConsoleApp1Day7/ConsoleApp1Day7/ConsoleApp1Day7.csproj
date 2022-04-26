@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleApp1Day7.Tester</StartupObject>
+    <StartupObject>ConsoleApp1Day7.ExceptionEg</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractEg.cs" />
+    <Compile Include="ExceptionEg.cs" />
+    <Compile Include="ExplicitInterface.cs" />
     <Compile Include="ICustomer.cs" />
     <Compile Include="MethodOverride.cs" />
     <Compile Include="OperatorOverload.cs" />

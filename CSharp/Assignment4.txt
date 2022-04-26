@@ -1,0 +1,44 @@
+1. Create an Abstract class Student with  Name, StudentId, Grade as members and also an abstract method Boolean Ispassed(grade) which takes grade as an input and checks whether student passed the course or not.  
+
+Create 2 Sub classes Undergraduate and Graduate that inherits all members of the student and overrides Ispassed() method 
+
+For the UnderGrad class, if the grade is above 70.0, then isPassed returns true, otherwise it returns false. For the Grad class, if the grade is above 80.0, then isPassed returns true, otherwise returns false.
+
+2. Create an Employee class with Empid int, Empname string, Salary float. Pass values to the members through Constructor.
+
+Create a derived class called ParttimeEmployee with Wages as a data member. Instantiate the base class through the derived class constructor
+
+3. Create a class Student and the child classes DayScholar and Hosteller
+
+    Student :
+  Instance Variables: studId : int , studName :String ,   
+  examFee:double
+  Methods: void displayDetails()  , double payFee() 
+
+ Provide suitable constructors
+
+DayScholar :
+
+Instance Variables : transportFee:double , Methods: Provide suitable constructors.
+
+Hosteller :
+
+Instance Variables: hostelFee :double
+
+Methods: Provide suitable constructors
+
+Create  a  general  class  “RunClass”.  In this create two objects for DayScholar and Hosteller classes respectively. Invoke payFee() method with suitable amount and obtain the remaining amount to be paid.
+
+(hint : write your own logic to calculate fees etc).
+
+
+
+
+
+
+
+
+
+
+
+
