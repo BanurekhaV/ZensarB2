@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleApp1Day7.MethodOverride</StartupObject>
+    <StartupObject>ConsoleApp1Day7.Tester</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractEg.cs" />
+    <Compile Include="ICustomer.cs" />
     <Compile Include="MethodOverride.cs" />
     <Compile Include="OperatorOverload.cs" />
     <Compile Include="MethodOverload.cs" />

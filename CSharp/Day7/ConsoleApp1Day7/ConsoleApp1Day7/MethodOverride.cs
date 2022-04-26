@@ -61,7 +61,7 @@ namespace ConsoleApp1Day7
         Shape s = new Shape();
             Console.WriteLine("The Area of Shape is {0}", s.Area());
         s = new Rectangle(); //covariance 
-            Console.WriteLine("The Area of Rectangle is {0}",s.Area());
+            Console.WriteLine("The Area of Rectangle is {0}", s.Area());
             s = new Circle();
             Console.WriteLine("The Area of Circle is {0}", s.Area());
             Console.Read();

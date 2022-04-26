@@ -55,11 +55,12 @@ namespace ConsoleAppDay6
         static void Main()
         {
             Rectangle r = new Rectangle();
-            r.GetLB();
+            r.GetLB();  
             Console.WriteLine("Area of Rectangle is {0}", r.Area());
             Circle c = new Circle();
             c.GetRadius();
             Console.WriteLine("Area of Circle is {0}", c.Area());
+                      
             Console.Read();
         }
     }
