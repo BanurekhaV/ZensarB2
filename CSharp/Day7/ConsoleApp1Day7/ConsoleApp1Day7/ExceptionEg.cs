@@ -17,6 +17,8 @@ namespace ConsoleApp1Day7
                 a = int.Parse(Console.ReadLine());
                 b = int.Parse(Console.ReadLine());
                 c = a / b;
+                int[] arr = { 1, 2, 3, 4 };
+                Console.WriteLine(arr[6]);
                 Console.WriteLine(c);
             }
             catch (FormatException fe)
