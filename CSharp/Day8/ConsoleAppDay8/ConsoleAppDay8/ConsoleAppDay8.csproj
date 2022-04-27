@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleAppDay8.CollectionsEg</StartupObject>
+    <StartupObject>ConsoleAppDay8.Delegate1</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CollectionsEg.cs" />
+    <Compile Include="Delegate1.cs" />
+    <Compile Include="GenericList.cs" />
     <Compile Include="IndexerEg2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

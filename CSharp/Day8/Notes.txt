@@ -1,0 +1,97 @@
+User Defined Exceptions:
+ - create an exception class inheriting from ApplicationException
+ - throw the exception class at relevant situation
+ - catch the exception
+
+Indexers: Smart Array
+
+
+class a
+{
+  
+string[] name = new string[3];
+
+}
+
+a a1= new a();  a[] a1= new a[3]();
+a1[0]="banu";
+a1[1]="rekha";
+a1[2]="V"
+
+inheritance : 'is a' relationship
+composition :  'has a' relationship
+
+class Car
+{
+  string carmodel; string cartype; double cost;
+   Engine engine; is composed of another class object as a field
+
+}
+
+
+class Engine
+{
+  public int engineno{get;set;} string model; double power; int no_of_cylinders;
+   
+}
+
+Car car= new Car();
+car.carmodel="newmodel";
+car.engine.engineno=132456;
+
+Collections: are classes that can heve any datatypes and is dynamic(size is not fixed)
+
+Collections          
+
+1. ArrayList
+2. HashTable - key and value pairs. Key and values can be of differenet datatypes. Key cannot be null nor duplicated. Values can be null or duplicated. 
+3. SortedList - sort
+4. Stacks - last in first out stack
+           st = new stack();
+                 st.push(4), st.pop();
+5. Queues - first in first out
+                     Queue q = new Queue();
+                      q.enque(6); q.dequeue();
+              
+implicitly typed variable
+var
+
+Generics: are template driven classes,methods, properties etc <>
+
+1. List<T>
+2. Dictionary
+
+Object Initializer
+List Initializer
+
+Generic methods/classes
+
+Delegates: comparable to Function Pointers of C
+are reference types
+we need to declare a delegate with a signature
+then we can make the delegate point to a function that matches the signature
+
+user->delegate->function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
