@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleAppDay8
 {
-    public delegate void EmployeeDelegate(string s); //declaration of a delegate 
+     delegate void EmployeeDelegate(string s); //declaration of a delegate 
+     delegate void SecondDelegate();
     class Delegate1
     {
         public void accept(string s)
@@ -18,6 +19,10 @@ namespace ConsoleAppDay8
             Console.WriteLine(s);
         }
 
+        public void NoParameterMethod()
+        {
+            Console.WriteLine("Reached No parameter Method");
+        }
         public string Message()
         {
             return "Hi";
@@ -26,12 +31,16 @@ namespace ConsoleAppDay8
         static void Main()
         {
             Delegate1 del1 = new Delegate1();
-            EmployeeDelegate empd1 = new EmployeeDelegate(Delegate1.Show);
+            Console.WriteLine(del1.Message()); 
+            EmployeeDelegate empd1 = new EmployeeDelegate(Show);
             EmployeeDelegate empd2 = new EmployeeDelegate(del1.accept);
+            SecondDelegate sd = new SecondDelegate(del1.NoParameterMethod);
 
             empd1("Banurekha"); //calling a delegate that internally calls the function that it is pointing to
             empd2.Invoke("Venkat");
+            sd(); //or sd.Invoke();
             Console.Read();
         }
     }
-}
+
+ }
