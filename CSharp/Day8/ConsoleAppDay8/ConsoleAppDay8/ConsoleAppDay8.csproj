@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleAppDay8.MulticastDelegate</StartupObject>
+    <StartupObject>ConsoleAppDay8.GenericClass</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -49,6 +49,8 @@
     <Compile Include="CollectionsEg.cs" />
     <Compile Include="Delegate1.cs" />
     <Compile Include="Delegate2.cs" />
+    <Compile Include="Delegate3.cs" />
+    <Compile Include="GenericClass.cs" />
     <Compile Include="GenericList.cs" />
     <Compile Include="IndexerEg2.cs" />
     <Compile Include="MulicastDelegate.cs" />
