@@ -7,7 +7,7 @@ using System.IO;
 
 namespace ConsoleAppDay10
 {
-    class Program
+    class BinaryFileOperations
     {
         //using Binary Reader and Writer classes
 
