@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleAppDay10.Serialize_Deserialize</StartupObject>
+    <StartupObject>ConsoleAppDay10.IteratorsEg</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,9 +47,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BinaryFileOperations.cs" />
+    <Compile Include="Directory_File_Info.cs" />
+    <Compile Include="IteratorsEg.cs" />
+    <Compile Include="MultithreadEg.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Serialize_Deserialize.cs" />
     <Compile Include="StreamOperations.cs" />
+    <Compile Include="Thread1Eg.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

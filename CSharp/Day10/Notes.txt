@@ -1,0 +1,42 @@
+Shallow Copy            vs              				 Deep copy
+-stores the reference of the objects of the original memory    	     stores the copies of the objects value
+
+-Reflects changes made either to the new or the old object            Does not reflect changes made by any one of the objects
+
+- faster							      comparatively slower
+
+Garbage Collections:
+ This occurs on the basis of the below conditions:
+   - System has low physical memory
+   - if the memory allotted to various objects in the heap exceeds a preset threshold, then garbage collection occurs
+   - if GC.Collect method is called
+
+Phases in GC
+  1. Marking Phase : All Live objects reside here
+  2. Relocating Phase : All Non active objects
+  3. Compacting Phase: All Dead Objects are removes here
+
+Generation 0: All short lived objects (temporary)
+Newly allocated Objects
+ Generation 1 - Buffered Objects
+-> Generation 2  - Long-lived objects
+
+Time Complexity - time taken to execute 
+
+Space Complexity - memory used for execution
+
+Persistance : saving data permanently
+Files : 
+Serialization - A process of converting objects into  byte streams, to save it for future use.
+Deserialization - The reverse of the above process.
+  Binary Serialization
+  XML Serialization < >
+  Soap Serialization
+  Json Serialization { }
+
+Attributes/Annotations/Decorators/Metatdata
+
+
+Threads : Thread is a light weight process
+Life Cycle of  a thread : start->ready->(wait/suspend/sleep)->natural death/killed
+
