@@ -66,6 +66,15 @@ namespace ConsoleAppDay11
                 dispeg.DoSomething();
             }
 
+            //declaring Anonymous types
+
+            var myanonymoustype = new
+            {
+                data1="CSharp",
+                data2=2,
+                data3=true,
+            };
+            Console.WriteLine(myanonymoustype.GetType());
             Console.Read();
         }
     }
