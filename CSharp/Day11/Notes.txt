@@ -1,0 +1,38 @@
+Thread t1= new Thread(Method1); //internally it invokes a delegate called as threadstart
+t1.start();
+
+//the above can also be done thru a threadstart object itself
+            ThreadStart obj = new ThreadStart(DisplayNumbers);
+            // Thread t1 = new Thread(obj);
+            // t1.Start();
+
+//The above can aslo be done as follows:
+
+1. Thread t1=new thread(new ThreadStart(DisplayNumbers));
+2. Thread t1= new Thread(delegate(){DisplayNumbers();}); // Anonymous
+3. Thread t1= new Thread(()=>{DisplayNumbers();}); //lambda expression
+4. Thread t1= new Thread(()=>DisplayNumbers());     ""
+
+
+pooling : thread
+
+IDisposable -Dispose();
+
+finalize() 
+
+Anonymous Types: are datatypes that can have many data
+
+%- modulo
+LINQ - Lang. Integrated Query
+a)Query Expressions : starts with akeyword from and ends either in a select or group by
+
+1. write queryexpressions of a given array of integers to find the 
+   - numbers divisible by 3
+   - maximum number
+   - minimum number
+
+2. write a query expression that queries the list collection of employee to find out all employees whose names end with a
+
+b)Method Expressions : 
+Lambda Expression a=>a /2!=0   
+-makes use of extension methods
