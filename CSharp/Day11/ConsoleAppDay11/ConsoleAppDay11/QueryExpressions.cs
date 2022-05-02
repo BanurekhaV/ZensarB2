@@ -12,7 +12,7 @@ namespace ConsoleAppDay11
         public string Name { get; set; }
         public string Email { get; set; }
 
-        public static List<Student> GetStudents()
+        public  List<Student> GetStudents()
         {
             List<Student> studlist = new List<Student>();
             Student s1 = new Student { ID = 101, Name = "Supriya", Email = "supriya@gmail.com" };
@@ -67,12 +67,12 @@ namespace ConsoleAppDay11
 
             //working with list objects in query expressions
             //query the list collection and find out all students whose names start with S/R
-
-            IEnumerable<string> studnames = from stud in Student.GetStudents()
+            Student stud1 = new Student();
+            IEnumerable<string> studnames = from stud in stud1.GetStudents()
                                             where stud.Name.Contains("S")
                                             select stud.Name;
 
-            IEnumerable<Student> st = from s in Student.GetStudents()
+            IEnumerable<Student> st = from s in stud1.GetStudents()
                                       where s.ID == 103
                                       select s;
 
