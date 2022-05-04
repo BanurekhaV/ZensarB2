@@ -1,0 +1,52 @@
+Delegates: is an object that refers to a method.
+Points: It provides a way to encapsulate the methods
+        They are type safe pointers to any method
+        Mainly used in implementing callback methods and events
+        Delegates can be chained together as one or more methods that can be called on an event
+        Delegates can also be used in anonymous method calls 
+
+Making a delegate point to a no name function(in line function)
+
+Function Delegates:
+1. Func is built-in delegate type
+2. Func delegates have to return a value
+3. Func delagates can have 0-16 input parameters
+4. Func delegates does not allow ref and out keyword
+5. Func delegates can be used with both anonymous as well as lambda expressions
+
+Action Delegates:
+1. Action delgates may or may not take parameter and does not return any value
+
+
+Predicate Delegates:
+1.  A predicate is a method that returns a true /false
+2.  Predicate delegates are references to a predicate method
+3.  Takes one parameter (compulsarily) and returns a boolean
+4.  Predicate delegates are useful for filtering list of values
+
+
+Extension Methods : is a concept that allows us to add new methods to the existing class or structure without modifying the original source code
+
+Library: full of classes and methods(that can be used and re-used again and again)
+
+1.Create a class library(c#) project and call it MyCalculator
+- Change the name of the class from class1 to Calculator
+- Add 2 functions inside the class 
+     1. public int Add(int x, int y){ reurn x+y;}
+     2. public string Message(string s){ return "Hello" + " " + s;}
+-  Build the librry project, and observe a .dll assembly geting created
+
+
+2. Add a ConsoleProject to the same solution and call it CalculatorClient
+  - add reference of the MyCalculator namespace inside the .exe project
+  - also use the project in the namespace by typing using MyCalculator;
+  - create an object of the Calculator class and invoke the methods.
+
+3. We would like to add some more methods to the class library
+ For which we will use a concept of extension methods
+
+4. Create another class library project and call it as MyCalculator2, and change the class name from class1 to CalculatorAddons
+  - add reference of the first class library project(MyCalculator)
+  - inside the class, add 2 more methods subtract and multiply with necessary arguments and return type
+  - make the class as static and all the new methods also static
+  - to the new methods pass the object of the first dlls class with the keyword this as the first argument/parameter to the methods)
