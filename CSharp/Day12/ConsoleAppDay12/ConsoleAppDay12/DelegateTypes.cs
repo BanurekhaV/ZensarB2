@@ -7,9 +7,16 @@ using System.Threading.Tasks;
 namespace ConsoleAppDay12
 {
     class DelegateTypes
-    {        
+    {
+        public DateTime dob { get; set; }
+        public DelegateTypes(string s)
+        {
+            dob = Convert.ToDateTime(s);
+            Console.WriteLine(dob);
+        }
         static void Main()
         {
+            DelegateTypes dtypes = new DelegateTypes("04/05/2022");
             //1. func delegate with 0 parameters- anonymous
             //Func<int> getrandomnumber = delegate ()
             //{
@@ -40,7 +47,64 @@ namespace ConsoleAppDay12
             Func<double, double, double> powerdel = Math.Pow;
             double power = powerdel(2, 3); //call the delegate pointing function
             Console.WriteLine($"2 ^ 3 is : {power}");
+
+            //1. Action Delegates with anonymous
+            Action<int> Actiondel = delegate (int i)
+            {
+                Console.WriteLine(i);
+            };
+
+            Actiondel(10);
+         
+            //2. Action delegate with 2 inputs and a method name
+            Action<int, int> adddel = Addition;
+            adddel(40, 50);
+
+            //3. Action delegate with anonymous method and 0 parameter
+            Action anonymousdel = delegate
+            {
+                Console.WriteLine("Reached Anonymous Method..");
+            };
+            anonymousdel();
+            //4. Action delegate with lambda
+            Action<string> lambdadel = (msg) => Console.WriteLine($"Message from Lambda action: {msg}");
+            lambdadel("Hi");
+
+            //5. Action delegate pointing to a method with name
+            Action<string> str = Show;
+            str("batch");
+
+            //1. Predicate delegates with anonymous method
+            Predicate<string> checkifupper = delegate (string s)
+            {
+                return s.Equals(s.ToUpper());
+            };
+
+            bool answer = checkifupper("HELLO");
+            Console.WriteLine(answer);
+
+            //2. Predicate delegate with lambda
+            Predicate<string> isupper = s => s.Equals(s.ToUpper());
+            Console.WriteLine(isupper("WORLD"));
+
+            //3.Predicate delegate poiting to a fucntion with name
+            Predicate<string> pdel = string.IsNullOrEmpty;
+            Console.WriteLine($"string.IsNullOrEmpty returned :{pdel("Data")}");
+
+            //4.Predicate delegate with anonymous method 
+            Predicate<char> chardel = delegate (char c) { return char.IsDigit(c); };
+            Console.WriteLine($"Char.IsDigit() returned : {chardel('A')}");
+                        
             Console.Read();
+        }
+        public static void Addition(int n1, int n2)
+        {
+            Console.WriteLine($"{n1} + { n2} = {(n1 + n2)}");
+        }
+
+        public static void Show(string str)
+        {
+            Console.WriteLine($"Uppercase : {str.ToUpper()}");
         }
     }
 }
