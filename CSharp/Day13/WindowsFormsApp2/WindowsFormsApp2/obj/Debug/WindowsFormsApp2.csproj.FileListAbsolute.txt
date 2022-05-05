@@ -1,0 +1,11 @@
+E:\Banu\Zensar\Batch 2\CSharp\Day13\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+E:\Banu\Zensar\Batch 2\CSharp\Day13\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+E:\Banu\Zensar\Batch 2\CSharp\Day13\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+E:\Banu\Zensar\Batch 2\CSharp\Day13\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+E:\Banu\Zensar\Batch 2\CSharp\Day13\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
+E:\Banu\Zensar\Batch 2\CSharp\Day13\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+E:\Banu\Zensar\Batch 2\CSharp\Day13\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+E:\Banu\Zensar\Batch 2\CSharp\Day13\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+E:\Banu\Zensar\Batch 2\CSharp\Day13\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+E:\Banu\Zensar\Batch 2\CSharp\Day13\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+E:\Banu\Zensar\Batch 2\CSharp\Day13\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form2.resources

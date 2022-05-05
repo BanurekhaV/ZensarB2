@@ -33,13 +33,38 @@ namespace WindowsFormsApp1
 
         private void BtnLogin_MouseEnter(object sender, EventArgs e)
         {
-            BtnLogin.BackColor = Color.Red;          
+            //  BtnLogin.BackColor = Color.Red;
+            ((Button)sender).BackColor = Color.Red;
 
         }
 
         private void BtnLogin_MouseLeave(object sender, EventArgs e)
         {
-            BtnLogin.ForeColor = Color.White;
+            //BtnLogin.ForeColor = Color.White;
+            //MyForm2 frm2=new MyForm2();
+            //frm2.Show();
+            ((Button)sender).ForeColor = Color.White;
         }
+                  
+        
+        private void button1_MouseEnter_1(object sender, EventArgs e)
+        {
+            this.button1.MouseEnter += new System.EventHandler(this.BtnLogin_MouseEnter);
+        }
+
+        private void button1_MouseLeave_1(object sender, EventArgs e)
+        {
+            this.button1.MouseLeave += new System.EventHandler(this.BtnLogin_MouseLeave);
+        }
+
+        private void button2_MouseEnter_1(object sender, EventArgs e)
+        {
+            this.button2.MouseEnter += new System.EventHandler(this.BtnLogin_MouseEnter);
+        }
+
+        private void button2_MouseLeave_1(object sender, EventArgs e)
+        {
+        this.button2.MouseEnter += new System.EventHandler(this.BtnLogin_MouseLeave);
+    }
     }
 }

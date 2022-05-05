@@ -17,6 +17,16 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            foreach(Control c in panel1.Controls)
+            {
+                c.BackColor = Color.Blue;
+                c.ForeColor = Color.White;
+            }
+            Control o = (Control)sender;
+            o.BackColor = Color.Green;
+            o.ForeColor = Color.Azure;
+        }
     }
 }
