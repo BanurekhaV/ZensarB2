@@ -8,3 +8,4 @@ E:\Banu\Zensar\Batch 2\CSharp\Day12\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\
 E:\Banu\Zensar\Batch 2\CSharp\Day12\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 E:\Banu\Zensar\Batch 2\CSharp\Day12\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 E:\Banu\Zensar\Batch 2\CSharp\Day12\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+E:\Banu\Zensar\Batch 2\CSharp\Day12\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MyForm2.resources

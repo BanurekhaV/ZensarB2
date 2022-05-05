@@ -64,6 +64,8 @@ namespace WindowsFormsApp1
             this.BtnLogin.Text = "Login";
             this.BtnLogin.UseVisualStyleBackColor = true;
             this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
+            this.BtnLogin.MouseEnter += new System.EventHandler(this.BtnLogin_MouseEnter);
+            this.BtnLogin.MouseLeave += new System.EventHandler(this.BtnLogin_MouseLeave);
             // 
             // password
             // 

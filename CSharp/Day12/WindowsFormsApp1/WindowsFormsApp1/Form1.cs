@@ -30,5 +30,16 @@ namespace WindowsFormsApp1
                 MessageBox.Show("It is a company name");
             }
         }
+
+        private void BtnLogin_MouseEnter(object sender, EventArgs e)
+        {
+            BtnLogin.BackColor = Color.Red;          
+
+        }
+
+        private void BtnLogin_MouseLeave(object sender, EventArgs e)
+        {
+            BtnLogin.ForeColor = Color.White;
+        }
     }
 }

@@ -8,15 +8,9 @@ namespace ConsoleAppDay12
 {
     class DelegateTypes
     {
-        public DateTime dob { get; set; }
-        public DelegateTypes(string s)
-        {
-            dob = Convert.ToDateTime(s);
-            Console.WriteLine(dob);
-        }
         static void Main()
         {
-            DelegateTypes dtypes = new DelegateTypes("04/05/2022");
+           
             //1. func delegate with 0 parameters- anonymous
             //Func<int> getrandomnumber = delegate ()
             //{
@@ -107,4 +101,5 @@ namespace ConsoleAppDay12
             Console.WriteLine($"Uppercase : {str.ToUpper()}");
         }
     }
+    
 }
