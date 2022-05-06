@@ -1,0 +1,18 @@
+Events : are some changes in the object
+
+-Delegates and events provide notifications to the client applications when some change occurs (object)
+- Delegates and events are tightly coupled
+- works on a publisher/subscriber model
+
+Publisher : The class that sends/raises an event. This class determines when an event has to be raised
+Subscriber : The class that receives or handles the event. Can handle multiple events from multiple publishers
+
+onclick()
+{
+ TextBox1.text="";
+TextBox2.text="";
+
+}
+
+
+Tasks: Task Parallel Library (TPL) - Asynchronous execution

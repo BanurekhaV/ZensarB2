@@ -1,0 +1,72 @@
+jhgsk;jfs
+fsdf4sdsdfsd
+SfsF
+fvbaznkjAXNLS
+CASCDAA task in C# is used to implement Task-based Asynchronous Programming and was introduced with the .NET Framework 4. The Task object is typically executed asynchronously on a thread pool, rather than synchronously on the main thread of the application.
+A task scheduler is responsible for starting the Task and also responsible for managing it.
+ By default, the Task scheduler uses threads from the thread pool to execute the Task.
+Tasks in C# basically are used to make  application more responsive. If the thread that manages the user interface offloads the works to other threads from the thread pool, then it can keep processing user events which will ensure that the application can still be used.
+
+jhgsk;jfs
+fsdf4sdsdfsd
+SfsF
+fvbaznkjAXNLS
+CASCDAA task in C# is used to implement Task-based Asynchronous Programming and was introduced with the .NET Framework 4. The Task object is typically executed asynchronously on a thread pool, rather than synchronously on the main thread of the application.
+A task scheduler is responsible for starting the Task and also responsible for managing it.
+ By default, the Task scheduler uses threads from the thread pool to execute the Task.
+Tasks in C# basically are used to make  application more responsive. If the thread that manages the user interface offloads the works to other threads from the thread pool, then it can keep processing user events which will ensure that the application can still be used.
+
+jhgsk;jfs
+fsdf4sdsdfsd
+SfsF
+fvbaznkjAXNLS
+CASCDAA task in C# is used to implement Task-based Asynchronous Programming and was introduced with the .NET Framework 4. The Task object is typically executed asynchronously on a thread pool, rather than synchronously on the main thread of the application.
+A task scheduler is responsible for starting the Task and also responsible for managing it.
+ By default, the Task scheduler uses threads from the thread pool to execute the Task.
+Tasks in C# basically are used to make  application more responsive. If the thread that manages the user interface offloads the works to other threads from the thread pool, then it can keep processing user events which will ensure that the application can still be used.
+
+jhgsk;jfs
+fsdf4sdsdfsd
+SfsF
+fvbaznkjAXNLS
+CASCDAA task in C# is used to implement Task-based Asynchronous Programming and was introduced with the .NET Framework 4. The Task object is typically executed asynchronously on a thread pool, rather than synchronously on the main thread of the application.
+A task scheduler is responsible for starting the Task and also responsible for managing it.
+ By default, the Task scheduler uses threads from the thread pool to execute the Task.
+Tasks in C# basically are used to make  application more responsive. If the thread that manages the user interface offloads the works to other threads from the thread pool, then it can keep processing user events which will ensure that the application can still be used.
+
+jhgsk;jfs
+fsdf4sdsdfsd
+SfsF
+fvbaznkjAXNLS
+CASCDAA task in C# is used to implement Task-based Asynchronous Programming and was introduced with the .NET Framework 4. The Task object is typically executed asynchronously on a thread pool, rather than synchronously on the main thread of the application.
+A task scheduler is responsible for starting the Task and also responsible for managing it.
+ By default, the Task scheduler uses threads from the thread pool to execute the Task.
+Tasks in C# basically are used to make  application more responsive. If the thread that manages the user interface offloads the works to other threads from the thread pool, then it can keep processing user events which will ensure that the application can still be used.
+
+jhgsk;jfs
+fsdf4sdsdfsd
+SfsF
+fvbaznkjAXNLS
+CASCDAA task in C# is used to implement Task-based Asynchronous Programming and was introduced with the .NET Framework 4. The Task object is typically executed asynchronously on a thread pool, rather than synchronously on the main thread of the application.
+A task scheduler is responsible for starting the Task and also responsible for managing it.
+ By default, the Task scheduler uses threads from the thread pool to execute the Task.
+Tasks in C# basically are used to make  application more responsive. If the thread that manages the user interface offloads the works to other threads from the thread pool, then it can keep processing user events which will ensure that the application can still be used.
+
+jhgsk;jfs
+fsdf4sdsdfsd
+SfsF
+fvbaznkjAXNLS
+CASCDAA task in C# is used to implement Task-based Asynchronous Programming and was introduced with the .NET Framework 4. The Task object is typically executed asynchronously on a thread pool, rather than synchronously on the main thread of the application.
+A task scheduler is responsible for starting the Task and also responsible for managing it.
+ By default, the Task scheduler uses threads from the thread pool to execute the Task.
+Tasks in C# basically are used to make  application more responsive. If the thread that manages the user interface offloads the works to other threads from the thread pool, then it can keep processing user events which will ensure that the application can still be used.
+
+jhgsk;jfsdfgfjhkl;'
+;lkjhgfdfghjkl;lkjhh
+fsdf4sdsdfsd
+SfsF
+fvbaznkjAXNLS
+CASCDAA task in C# is used to implement Task-based Asynchronous Programming and was introduced with the .NET Framework 4. The Task object is typically executed asynchronously on a thread pool, rather than synchronously on the main thread of the application.
+A task scheduler is responsible for starting the Task and also responsible for managing it.
+ By default, the Task scheduler uses threads from the thread pool to execute the Task.
+Tasks in C# basically are used to make  application more responsive. If the thread that manages the user interface offloads the works to other threads from the thread pool, then it can keep processing user events which will ensure that the application can still be used.

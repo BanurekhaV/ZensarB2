@@ -1,0 +1,7 @@
+E:\Banu\Zensar\Batch 2\CSharp\Day14\ConsoleAppDay14\ConsoleAppDay14\bin\Debug\ConsoleAppDay14.exe.config
+E:\Banu\Zensar\Batch 2\CSharp\Day14\ConsoleAppDay14\ConsoleAppDay14\bin\Debug\ConsoleAppDay14.exe
+E:\Banu\Zensar\Batch 2\CSharp\Day14\ConsoleAppDay14\ConsoleAppDay14\bin\Debug\ConsoleAppDay14.pdb
+E:\Banu\Zensar\Batch 2\CSharp\Day14\ConsoleAppDay14\ConsoleAppDay14\obj\Debug\ConsoleAppDay14.csproj.AssemblyReference.cache
+E:\Banu\Zensar\Batch 2\CSharp\Day14\ConsoleAppDay14\ConsoleAppDay14\obj\Debug\ConsoleAppDay14.csproj.CoreCompileInputs.cache
+E:\Banu\Zensar\Batch 2\CSharp\Day14\ConsoleAppDay14\ConsoleAppDay14\obj\Debug\ConsoleAppDay14.exe
+E:\Banu\Zensar\Batch 2\CSharp\Day14\ConsoleAppDay14\ConsoleAppDay14\obj\Debug\ConsoleAppDay14.pdb
