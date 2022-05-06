@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using static System.Console;
+using static System.Convert;
 
 namespace ConsoleAppDay14
 {
@@ -12,9 +14,12 @@ namespace ConsoleAppDay14
         public static void Main()
         {
             FileRead fr = new FileRead();
-            Console.WriteLine("Fileread object created..");
+            WriteLine("Fileread object created..");
             fr.filereadoperation();
-            Console.Read();
+
+            int x = ToInt32(ReadLine());
+            WriteLine(x);
+            Read();
         }
     }
 
@@ -25,7 +30,7 @@ namespace ConsoleAppDay14
             try
             {
                 StreamReader sr = File.OpenText(@"E:\Banu\Zensar\Batch 2\firstgitdata.txt");
-                Console.WriteLine($"The first line of the file is : {sr.ReadLine()}");
+                WriteLine($"The first line of the file is : {sr.ReadLine()}");
                 sr.Close();
             }
             catch { await FileNotFound(); }
@@ -33,11 +38,11 @@ namespace ConsoleAppDay14
         }
         async Task FileNotFound()
         {
-            Console.WriteLine("Specified File not found.. Please check the name and location");
+            WriteLine("Specified File not found.. Please check the name and location");
         }
         async Task ExitProgram()
         {
-            Console.WriteLine("\n Press any key to exit");
+            WriteLine("\n Press any key to exit");
         }
     }
 }
