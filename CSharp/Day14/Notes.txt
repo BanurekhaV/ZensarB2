@@ -1,0 +1,23 @@
+Await : is a keyword to suspend execution of a method until the awaited task is complete.
+
+C# Lang Enhancements
+
+1. Using static : staic is a directive introduced with c#6.0. Allows us to reference the members of the static type without the necessity of namespace or type/s references
+
+2. Auto Property Initializer
+
+3. Dictionary Initilaizers 
+Dictionary id comparable to HashTable
+ - Both use key value pairs
+ - difference
+    Dicitionary is Generic, Hashable is Non-Generic
+    Dictionary can use datatypes
+    Dictionary is faster, since there is no boxing - unboxing
+    Dictionary throws error if the key is not found, whereas Hashtable returns a null
+
+4.Nameof Expression/operator : is one that can produce the name of the variables/methods/type as string constant
+  - It is operational/evaluated during compile time. No effect during run time
+
+5.Exception Filters
+- allows to specify a conditional clause for the catch
+- need to declare them in the same line as that of the catch block
