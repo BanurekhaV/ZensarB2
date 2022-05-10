@@ -1,0 +1,115 @@
+I) Solid Principles : Design Principles
+
+- It is an acronymn of 5 individual principles
+ S -  Single Responsibility Principle (SRP)- The class/es should have one and only one responsibility/job
+ O -  Open/Closed Principle - The classes should be open for extensions and closed for modifications
+ L -  Liskovs Substitution Principle - The Parent class/es should be easily substituted with the child class without changing the behaviour of the parent
+ I -  Interface Segregation Principle - Many client specific interfaces are better than a general interface
+ D -  Dependency Inversion Principle - The class/es should depend on abstraction but not concretion. We should have interface to communicate with the concrete class
+    - IOC: Inversion of control - is the actual mechanism that allows high level components to depend on abstraction rather than concretion(that which implements low level functionalities)
+    - DI : Dependency Injection - a design pattern to inject low level implementation component to a high level component
+
+ Ioc Container : Is a programming framework that provides automatic DI of the component. Is responsible for
+    1. Registration : the type of object for specific dependency
+    2. Resolution : creating an dependency object and injecting into the requesting class
+    3. Disposition : Manages the lifetime of the dependecies (singleton, scoped, transient)
+
+  DI can be used in 3 ways
+  1. Constructor Injection : Instances of dependency can be passed as an argument to the constructor of the dependant class
+  2. Method Injection : As an argument to the method of dependent class
+  3. Property Injection : As an argument to a specific property of the dependent class
+
+
+public class Animal{
+ public virtual void makenoise(){
+  cw("I am an animal making noise");
+}
+}
+
+class Dog : Animal
+{
+public override void makenoise()
+{
+cw("Bow,Bow");
+}
+}
+
+class A{cgvhbjkk;} - concrete class (is that which has all implementations) - abstraction and not concretion
+
+interface
+
+user/client
+
+
+class flightbooking : IFlightBooking - concrete class
+
+class B{ 
+
+public B(IFlightBooking ib ){}
+
+
+II) Design Principles : 
+1. Independent and Autonoumous Services
+2. Scalability 
+3. Decentralization
+4. Resilient Services
+5. Real time Load Balancing 
+6. Availability
+7. Continuous delivery through Devops Integration
+8. Seamless API integration, and cont. monitoring
+9. Isolation from failures
+10. Auto-provisioning
+
+
+III) Design Patterns : are techniques that enable to design and architect the code. low level solutions
+
+1994 - a book titled Design Patterns - Elements of resuable Object Oriented s/w
+Gang of Four (GOF). According to these 4 authors, Design patterns are primarily based on
+   1. Program to an interface no an implementation
+   2. Favour/Favor object Composition over Inheritance
+
+As per the above book, there are 23 design patterns which are classified under 3 categories
+  1. Creational Patterns : that provide a way to create objects, hiding the creation logic, by not instantiating objects directly with the new keyword
+
+  2. Structural Patterns : This is more to do with class and object composition
+
+  3. Behavioral Patterns : are concerned with communication between objects
+
+
+Singleton Pattern : Is the simplest pattern. Comes under creational category. Involves creating a single object without instantiation 
+Advantages : Sharing of Resources across multiple clients
+             Lazy-loading of static objects 
+             Easy to Maintain
+             Reduces overhead
+
+Guideline to singleton pattern
+  1. Private Constructor without parameters (to avoid instatintiation from outside)
+  2. Declare the implementation class as public and sealed
+  3. Private static object
+  4. Create a public static method or property which returns the single object created
+
+Factory Pattern: is used to create the object of a class without exposing the object creation logic to the client. To do so, we will create an abstract class as Factory class which in turn will create the instances of the actual concrete class 
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
