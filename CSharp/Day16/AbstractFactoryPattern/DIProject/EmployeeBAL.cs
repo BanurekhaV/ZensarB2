@@ -8,16 +8,53 @@ namespace DIProject
 {
    public class EmployeeBAL
     {
-        public IEmployeeDAL iempdal;
+        ////1. with constructor injection
+        //public IEmployeeDAL iempdal;
 
-        public EmployeeBAL(IEmployeeDAL empdalargument) //EmployeeDAL-services class is injected
+        //public EmployeeBAL(IEmployeeDAL empdalargument) //EmployeeDAL-services class is injected
+        //{
+        //   iempdal = empdalargument;
+        //}
+
+        //public List<Employee> EmployeeDetails()
+      //  {
+          
+       //     return iempdal.GetAllEmployees();
+       // }
+
+    //2. with property injection
+    //private IEmployeeDAL iempdal;
+
+    //public IEmployeeDAL _EmployeeObject
+    //{
+    //    set
+    //    {
+    //        //this.iempdal = value;
+    //        iempdal = value;
+    //    }
+    //    get
+    //    {
+    //        return iempdal;
+    //    }
+    //}
+
+    //public List<Employee> EmployeeDetails()
+    //{
+    //   
+    //    return iempdal.GetAllEmployees();
+    //}
+
+    //3. DI thru Method
+    public IEmployeeDAL iempdal;
+        public List<Employee> EmployeeDetails(IEmployeeDAL iedal) // DI in a method
         {
-           iempdal = empdalargument;
+            iempdal = iedal;
+            return iempdal.GetAllEmployees();
         }
 
-        public List<Employee> EmployeeDetails()
+        public Employee GetOneEmployee()
         {
-            return iempdal.GetAllEmployees();
+            return iempdal.GetOneEmployee();
         }
     }
 }

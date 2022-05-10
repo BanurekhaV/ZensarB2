@@ -18,5 +18,11 @@ namespace DIProject
             employeelist.Add(new Employee() { ID = 3, Name = "Rajesh", Department = "Finance" });
             return employeelist;
         }
+
+        public Employee GetOneEmployee()
+        {
+            Employee e = new Employee() { ID = 10, Name = "Zensar", Department = "All" };
+            return e;
+        }
     }
 }

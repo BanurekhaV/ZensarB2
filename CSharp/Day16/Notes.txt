@@ -45,6 +45,12 @@ to : type that actually is returned
 IEmployeeDal iempdal= new EmployeeDal();
 
 
+DI thru constructors : Ensures the dependency object is initialized and available before invoking any methods of the depedency object. This avoids any NullReferenceExceptions
+
+
+
+ 
+
 
 
 

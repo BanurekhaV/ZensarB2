@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactoryPattern", "A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIProject", "DIProject\DIProject.csproj", "{7917CE9D-9AA6-4649-AF71-6FCFE9B574D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI_With_Unity", "DI_With_Unity\DI_With_Unity.csproj", "{C104E110-F20B-43D8-9FAC-EB1D7B1862C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7917CE9D-9AA6-4649-AF71-6FCFE9B574D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7917CE9D-9AA6-4649-AF71-6FCFE9B574D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7917CE9D-9AA6-4649-AF71-6FCFE9B574D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C104E110-F20B-43D8-9FAC-EB1D7B1862C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C104E110-F20B-43D8-9FAC-EB1D7B1862C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C104E110-F20B-43D8-9FAC-EB1D7B1862C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C104E110-F20B-43D8-9FAC-EB1D7B1862C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

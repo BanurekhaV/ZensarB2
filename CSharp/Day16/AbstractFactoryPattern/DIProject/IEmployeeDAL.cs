@@ -9,5 +9,6 @@ namespace DIProject
     public interface IEmployeeDAL
     {
         List<Employee> GetAllEmployees();
+        Employee GetOneEmployee();
     }
 }

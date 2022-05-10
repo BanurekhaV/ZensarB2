@@ -10,16 +10,31 @@ namespace DIProject
     {
         static void Main(string[] args)
         {
-            EmployeeBAL employeebal = new EmployeeBAL(new EmployeeDAL());
+            //1. DI thru constructor
+            //EmployeeBAL employeebal = new EmployeeBAL(new EmployeeDAL());
 
-            List<Employee> emplist = employeebal.EmployeeDetails();
+            //List<Employee> emplist = employeebal.EmployeeDetails();
 
-            foreach(Employee e in emplist)
+            //2. DI thru Property
+            //EmployeeBAL employeebal = new EmployeeBAL();
+            //employeebal._EmployeeObject = new EmployeeDAL();
+
+            //List<Employee> emplist = employeebal.EmployeeDetails();
+
+            //3. DI thru Method call
+            EmployeeBAL employeebal = new EmployeeBAL();
+
+            List<Employee> emplist = employeebal.EmployeeDetails(new EmployeeDAL());
+
+            foreach (Employee e in emplist)
             {
                 Console.WriteLine($"ID :{e.ID}, Name : {e.Name}, and Department : {e.Department}");
-                Console.Read();
+               
             }
 
+            Employee emp = employeebal.GetOneEmployee();
+            Console.WriteLine(emp.ID + " " + emp.Name + " "+emp.Department);
+            Console.Read();
         }
     }
 }
