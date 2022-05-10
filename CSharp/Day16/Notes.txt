@@ -1,0 +1,65 @@
+Software Engg. Principles
+
+1. Seperation of Concerns
+2. Modularization
+3. Abstraction (what it does) and not (how it does)
+4. Anticipation of Changes :
+     - Generality (non-coupled)
+     - Incremental Development
+     - Consistency (Look and feel)
+5. DRY - Do not Repeat Yourself
+6. KISS - Keep it Simple Stupid
+7. YAGNI - You Aren't Gonna Neet It(Avoid Features that are not required)
+8. SOLID
+
+
+1. Singleon Pattern
+2. Factory Pattern
+3. Abstract Factory Pattern : super factory that creates other factories
+   A design Patern that provides a way to encapsulate a group of individual factories that have common theme without specifying their concrete classes.
+  An extension to factory pattern
+
+Difference between Factory pattern and Abstract Factory pattern
+1. AFD adds a layer of abstraction to the FD
+2. AFD implementaion can have multiple factory methods
+3. Similar products/themes are grouped in AFD
+4. AFD uses composition to de-couple applns. from specific implementation
+5. FD uses inheritance to de-couple applns.
+
+DIP: Says that components that depend on each other should always interact via an abstraction, not directly with the concrete class
+
+eg: if we have a Business Layer(Business Logic) and Data Layer(Data Access), then they should communicate only thru an interface for creation of objects
+
+Ioc(Inversion of Control) is a 'principle' and Dependency Injection is 'Implementation'
+- Dependency object should always be interface based
+---------------------------------------------------------
+
+
+Unity - framework from microsoft to work with Ioc and DI
+
+ioc container- should be registered<from, to>()
+from : type that will be requested
+to : type that actually is returned
+
+
+IEmployeeDal iempdal= new EmployeeDal();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
