@@ -1,0 +1,17 @@
+E:\Banu\Zensar\Batch 2\CSharp\Day17\MainProject_NUNIT\TestingMainProject\bin\Debug\NUnit3.TestAdapter.dll
+E:\Banu\Zensar\Batch 2\CSharp\Day17\MainProject_NUNIT\TestingMainProject\bin\Debug\NUnit3.TestAdapter.pdb
+E:\Banu\Zensar\Batch 2\CSharp\Day17\MainProject_NUNIT\TestingMainProject\bin\Debug\nunit.engine.dll
+E:\Banu\Zensar\Batch 2\CSharp\Day17\MainProject_NUNIT\TestingMainProject\bin\Debug\nunit.engine.api.dll
+E:\Banu\Zensar\Batch 2\CSharp\Day17\MainProject_NUNIT\TestingMainProject\bin\Debug\nunit.engine.core.dll
+E:\Banu\Zensar\Batch 2\CSharp\Day17\MainProject_NUNIT\TestingMainProject\bin\Debug\testcentric.engine.metadata.dll
+E:\Banu\Zensar\Batch 2\CSharp\Day17\MainProject_NUNIT\TestingMainProject\bin\Debug\TestingMainProject.dll
+E:\Banu\Zensar\Batch 2\CSharp\Day17\MainProject_NUNIT\TestingMainProject\bin\Debug\TestingMainProject.pdb
+E:\Banu\Zensar\Batch 2\CSharp\Day17\MainProject_NUNIT\TestingMainProject\bin\Debug\MainProject_NUNIT.dll
+E:\Banu\Zensar\Batch 2\CSharp\Day17\MainProject_NUNIT\TestingMainProject\bin\Debug\nunit.framework.dll
+E:\Banu\Zensar\Batch 2\CSharp\Day17\MainProject_NUNIT\TestingMainProject\bin\Debug\MainProject_NUNIT.pdb
+E:\Banu\Zensar\Batch 2\CSharp\Day17\MainProject_NUNIT\TestingMainProject\bin\Debug\nunit.framework.xml
+E:\Banu\Zensar\Batch 2\CSharp\Day17\MainProject_NUNIT\TestingMainProject\obj\Debug\TestingMainProject.csproj.AssemblyReference.cache
+E:\Banu\Zensar\Batch 2\CSharp\Day17\MainProject_NUNIT\TestingMainProject\obj\Debug\TestingMainProject.csproj.CoreCompileInputs.cache
+E:\Banu\Zensar\Batch 2\CSharp\Day17\MainProject_NUNIT\TestingMainProject\obj\Debug\TestingMainProject.csproj.CopyComplete
+E:\Banu\Zensar\Batch 2\CSharp\Day17\MainProject_NUNIT\TestingMainProject\obj\Debug\TestingMainProject.dll
+E:\Banu\Zensar\Batch 2\CSharp\Day17\MainProject_NUNIT\TestingMainProject\obj\Debug\TestingMainProject.pdb
