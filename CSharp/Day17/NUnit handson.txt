@@ -1,0 +1,53 @@
+We have two projects CustomerOrderService project which is a class library and CustomerOrderService.Tests project which is a NUnit test project.
+
+First create two classes Customer and Order and one enum CustomerType in CustomerOrderService project as below
+
+
+public enum CustomerType
+    {
+        Basic,
+        Premium,
+        SpecialCustomer
+    }
+}
+ 
+
+    public class Customer
+    {
+        public int CustomerId { get; set; }
+        public string CustomerName { get; set; }
+        public CustomerType CustomerType { get; set; }
+    }
+
+ 
+
+    public class Order
+    {
+        public int OrderId { get; set; }
+        public int ProductId { get; set; }
+        public int ProductQuantity { get; set; }
+        public decimal Amount { get; set; }
+    }
+
+
+public class CustomerOrderService
+    {
+        public void ApplyDiscount(Customer customer, Order order)
+        {
+            if (customer.CustomerType == CustomerType.Premium)
+            {
+                order.Amount = order.Amount - ((order.Amount * 10) / 100);
+            }
+            else if(customer.CustomerType == CustomerType.SpecialCustomer)
+            {
+                order.Amount = order.Amount - ((order.Amount * 20) / 100);
+            }
+        }
+    }
+
+In the above method, we are giving 10% discount to Premium customers and 20% discount to Special Customers. We are not giving any discount to Basic customers.
+
+Now add the CustomerOrderService.Tests project to test the above class and functions (include the above project reference and install NUnit and NUnitAdapter
+
+Write test cases that find out if discount percentages are as expected by creating all relevant data (AAA) etc.
+
