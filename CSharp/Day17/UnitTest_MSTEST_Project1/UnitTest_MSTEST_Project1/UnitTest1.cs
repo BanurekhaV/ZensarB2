@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using MainProject_NUNIT;
 
 namespace UnitTest_MSTEST_Project1
 {
@@ -64,6 +65,23 @@ namespace UnitTest_MSTEST_Project1
         public void TestMethod3()
         {
             Console.WriteLine("This is Method 3");
+        }
+
+        [TestMethod]
+        public void GetNames()
+        {
+            //arrange
+            Employee e = new Employee();
+            string fname = "Geetha";
+            string lname = "Kumari";
+            string expected = "GeethaKumari";
+            string actual;
+
+            //act
+            actual = e.GetName(fname, lname);
+            //assert
+            Assert.AreEqual(expected, actual);
+
         }
     }
 }

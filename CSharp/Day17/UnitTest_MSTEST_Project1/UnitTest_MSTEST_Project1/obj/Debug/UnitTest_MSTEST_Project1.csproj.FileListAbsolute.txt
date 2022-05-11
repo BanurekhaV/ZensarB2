@@ -11,3 +11,6 @@ E:\Banu\Zensar\Batch 2\CSharp\Day17\UnitTest_MSTEST_Project1\UnitTest_MSTEST_Pro
 E:\Banu\Zensar\Batch 2\CSharp\Day17\UnitTest_MSTEST_Project1\UnitTest_MSTEST_Project1\obj\Debug\UnitTest_MSTEST_Project1.csproj.CopyComplete
 E:\Banu\Zensar\Batch 2\CSharp\Day17\UnitTest_MSTEST_Project1\UnitTest_MSTEST_Project1\obj\Debug\UnitTest_MSTEST_Project1.dll
 E:\Banu\Zensar\Batch 2\CSharp\Day17\UnitTest_MSTEST_Project1\UnitTest_MSTEST_Project1\obj\Debug\UnitTest_MSTEST_Project1.pdb
+E:\Banu\Zensar\Batch 2\CSharp\Day17\UnitTest_MSTEST_Project1\UnitTest_MSTEST_Project1\bin\Debug\MainProject_NUNIT.dll
+E:\Banu\Zensar\Batch 2\CSharp\Day17\UnitTest_MSTEST_Project1\UnitTest_MSTEST_Project1\bin\Debug\MainProject_NUNIT.pdb
+E:\Banu\Zensar\Batch 2\CSharp\Day17\UnitTest_MSTEST_Project1\UnitTest_MSTEST_Project1\obj\Debug\UnitTest_MSTEST_Project1.csproj.AssemblyReference.cache
