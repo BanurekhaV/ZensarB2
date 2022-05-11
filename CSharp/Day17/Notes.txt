@@ -1,0 +1,62 @@
+Software Development Life Cycle: SDLC
+
+1. Waterfall Model 
+2. Protype Mode
+3. V shaped
+4. Spiral Model
+
+Testing : is a process of validating and verifying a software program/application/product
+
+TDD : Test Driven Development
+
+  -NUnit Testing - open source unit testing framework for dotnet applications
+  -MSTests - from Microsoft -Inbuilt in VS
+
+Unit : refers to a smallest piece of code(I-P-O)
+
+Testing Methodology : works on a concept of 3A's
+  1. Arrange
+  2. Act
+  3. Assert
+
+
+1. Create a class library application. Call it as MainProject. 
+2. Change the class name from class1 to Accounts
+3. Write all the methods required as per the demo
+4. Build it. It will create a .dll namespace
+
+1. Now create another class library project (within the same solution or different VS application)
+2. give the name of the project as Testing_MainProject
+3. Go to tools and select nuget packaage -> manage nuget for solutions
+4. in Browse type nunit.
+5. Add NUnit Adapter and NUnit to the Testing_MainProject by clicking install
+6. Then change the class name from class1 to TestAcooun
+7. Then add the test methods as per the demo
+8. Go to the Test menu option and select testExplorer (this will open the window for testing)
+9. Run the test methods and see the output. 
+
+10. You can cheange or write new methods to test
+
+MS Test
+Attributes
+[TestClass] - to declare a class as test class
+[TestMethod] - to mark a method as test 
+[TestInitialize] - executed before every test method
+[TestCleanup] - executed after every test method
+[ClassInitialize] - is executed once before all the testmethods (you need to make the class initialize method public static void and should pass a testcontext parameter
+[ClassCleanup] - is executed after all the test methods(i.e once). 
+[AssemblyInitialize] - is executed once before the class object is initialized (you need to make the assembly initialize method public static void and should pass a testcontext parameter
+[AssemblyCleanup] - is executed after all the test methods and class cleanup (once)
+
+
+
+
+
+
+
+
+
+
+
+
+
