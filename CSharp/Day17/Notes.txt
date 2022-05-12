@@ -35,7 +35,7 @@ Testing Methodology : works on a concept of 3A's
 8. Go to the Test menu option and select testExplorer (this will open the window for testing)
 9. Run the test methods and see the output. 
 
-10. You can cheange or write new methods to test
+10. You can change or write new methods to test
 
 MS Test
 Attributes

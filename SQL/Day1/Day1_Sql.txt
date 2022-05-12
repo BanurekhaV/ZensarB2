@@ -1,0 +1,171 @@
+Databases : A collection of inter-related data of a Business.
+
+Earlier data used to be stored as flat files.
+
+int
+
+Entities - are objects that have properties/attributes that describe the entity
+
+Entities - Table or  Relation
+Attributes - Coloumn or Properties (that describe)
+Row - Record or tuple
+No.of columns in a table is known as degree
+No.of Rows/tuples in a table is cardinality
+
+E-R Diagrams - a visual representation of the business requirements in terms of its entities, data, relationships
+
+Relationships : are of 3 type
+  1.one-one
+  2.one-to-many
+  3. many-to-many
+Integrity Constraints in RDBMS:
+1. Entity Integrity - pk
+2. Domain Integrity -   check, default, not null
+3. Referential Integrity - fk
+
+
+Keys in RDBMS:
+1. Primary Key : - PK Cannot have duplicate values
+    - PK cannot have null values
+    - one ore more columns can be a primary key for a table.(composite PK)
+2. Foreign Keys - are columns that depend on the pk column of another table
+ - it can have null values
+- it can repeat
+3. Unique Keys - are similar to pk. but can take one null value
+4. Check
+5. Default
+6. Not Null
+
+Structured Query Language (SQL)
+5 components
+
+1. DDL - Data Definition Lang. (Create, Alter,Drop,Truncate)
+2. DML - Data Manipulation Lang (Insert,Update,Delete)
+3. DQL - Data Query Lang (Select)
+4. TCL - Transaction Control Lang (Rollback, Commit)
+5. DCL - Data Control Lang (Grant, Revoke)
+
+Constraints are always associated to a column
+we can give constraints during table creation 
+we can also give constraints after table creation (using alter command)
+
+Syntax for adding a column to the table after table creation
+ alter table <tablename> add <column name> <datatype> <size>
+
+to drop a column from the able
+ alter <tablename> drop column <column name>
+
+to add constraints after table creation
+ alter table <table name> add constraint <constraint name> <type of constraint> <column name/s>
+
+
+Day 1 SQL script
+
+create database ZensarDB
+use ZensarDB
+--creating tables in the database
+create table tblDepartment
+(
+  DeptId int primary key,
+  DeptName varchar(20)not null,
+  Loc_City varchar(15)
+)
+
+create table tblEmployee(Empid int primary key,
+EmpName varchar(30),
+Gender char(7),
+Salary float,
+Email varchar(30) unique,
+DId int foreign key references tblDepartment(DeptId) -- relatating fk with pk
+)
+
+--deleting a table from the database
+
+drop table tblEmployee
+
+--insert rows/record/tuples into a table
+insert into tblDepartment(DeptId,DeptName)
+values(5,'Finance')
+
+insert into tblEmployee 
+values(107,'Revathi','Female',5000,'Revathi@zenasar.com',2,'22222222'),
+(105,'Sreedhar','Male',6700,'Sreddhar@gmail.com',1),
+(106,'Kranthi','Male',6900,'Kranti@hotmail.com',1)
+
+--inserting records to some columns only
+insert into tblemployee(Empid,Salary,Email,Did,Phoneno)
+values(108,6000,'bbb@email.com',3,'1111000')
+
+select * from tblDepartment
+
+select * from tblEmployee
+
+--adding a column after table creation
+alter table tblEmployee add Phoneno varchar(15)
+
+--dropping a column from the table
+alter table tblemployee drop column Phoneno
+
+--to update/modify data in column/columns of a table
+update tblemployee set Phoneno='3434343434' where EmpName='Rishikesh'
+
+--to add constraints after table creation
+alter table tblemployee
+add constraint uq_phone unique (Phoneno)
+
+--salary constraint to be added where salary >=5000
+alter table tblemployee
+add constraint salchk check(Salary>=5000)
+
+--default constraint
+
+create table dummy
+(id int,
+dname varchar(20),
+city varchar(30) default 'Delhi')
+
+insert into dummy(id,dname,city) values(1,'dummy2','Hyderabad')
+select * from dummy 
+--to add a default constraint after table creation
+alter table tblDepartment
+add constraint def_location default 'Chennai' for Loc_City
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
