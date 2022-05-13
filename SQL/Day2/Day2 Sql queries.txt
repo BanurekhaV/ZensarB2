@@ -57,4 +57,32 @@ update tblEmployee set did=4 where empname is null
 update tblEmployee set did=4 where gender is null
 select * from tblEmployee
 
+sp_help tbldepartment
+
+--to sort columns 
+select EmpName,Salary from tblEmployee
+order by EmpName
+
+select EmpName as EmployeeName, Salary from tblemployee
+order by EmployeeName desc
+
+select Salary from tblEmployee
+order by EmpName desc
+
+--sort the employees on highest to lowest salary of a dept 1
+
+select empname,salary,did from tblemployee
+where did=1
+order by salary desc
+
+select * from tbldepartment
+select * from tblEmployee
+
+insert into tbldepartment values(5,'Sales','Nagpur')
+insert into tblEmployee values(200, 'Zensar','Others',10000,'zensar@zen.com',null,'007007007')
+--join
+--list the names of employees along with their department names
+select Empname,Deptname from tblEmployee,tblDepartment
+where tblEmployee.DId=tblDepartment.DeptId
+
 update tblEmployee set empname='Kishore' where empid=111

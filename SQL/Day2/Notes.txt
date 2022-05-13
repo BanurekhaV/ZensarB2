@@ -1,0 +1,56 @@
+Dr. EF Codd - 12 Golden Rules
+
+Dr.Chen
+
+table 1 - has 6 columns
+create table table1(
+col1 datatype size,
+col2 datatype size not null,
+col3
+col4
+col5
+col6 datatype size)
+
+Insert into table1(col1,col3,col4,col5)
+values(1,2,3,4),(    ),(    )
+
+RelationalAlgebra :
+1  Restriction - restricts number of rows that are displayed
+2. Projection - projects only the cloumns required
+3. Join/Intersection - links one or more table and gets the data
+4. Union
+5. Difference
+6. Divide
+
+select - DQL
+Operators that are supported in select command
+1. Arithmetic (+,-,*,/)
+2. Relational (<,>,<=,>=,!=,<>,=)
+3. Logical (not, and, or)
+4. Functions
+  count(*) will include all rows with duplication,null etc
+  distinct() excludes duplication
+
+* - all columns - selection
+column list - projection
+where - restriction
+
+
+
+
+sorting the output based on column/s
+ - order by multiple columns
+ - order by on a column either ascending or descending
+ - order by on an alias name of a column
+ - order by on a column that is not in the select statement
+
+
+
+
+
+
+
+
+
+
+
