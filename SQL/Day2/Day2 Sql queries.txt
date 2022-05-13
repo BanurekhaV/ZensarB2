@@ -1,0 +1,60 @@
+select * from tblEmployee
+--few columns
+select Empid,EmpName,Salary from tblEmployee
+--restricting the number of rows to display
+select * from tblEmployee where DId=1
+select EmpName,Salary,Gender from tblEmployee where gender='Female'
+select * from tblemployee where salary>=6000
+select * from tblEmployee where salary >6000 or salary =6000
+select * from tblemployee where salary >=5000 and salary <=6000 
+--between operator
+select * from tblemployee where salary between 5000 and 6000
+select * from tblemployee where salary not between 5000 and 6000
+
+--null operator
+select * from tblEmployee where empname is null 
+select * from tblEmployee where empname is not null 
+--in operator to choose from multiple values
+select * from tblemployee where did=1 or did=2 or did=3
+select * from tblEmployee where did in(1,2,3)  -- works equivalent to 'or' logical operator
+select * from tblEmployee where did not in(1,2,3) 
+
+--arithmetic operators in select
+select Empname,Salary+500 from tblEmployee
+select Empname,Salary*12 from tblEmployee
+
+--aliases (alias name given to a column)
+select Empname,Salary*12 as 'Annual Salary' from tblEmployee
+select Empname,Salary*12 as 'Annual_Salary' from tblEmployee
+select Empname,Salary*12 'AnnualSalary' from tblEmployee
+select Empname EmployeeName from tblemployee
+
+--top to select few topmost records
+select top 3 * from tblEmployee
+select top 10 percent Empname,Salary from tblemployee
+
+--like operator( pattern matching operator that works with wild card characters)
+--% - 0,1 or more characters substitution
+--_ - exactly one character substitution
+-- [] - range of characters
+--^ - Not
+select * from tblEmployee where Empname like 'A%' 
+select * from tblEmployee where empname like '%a'
+select * from tblEmployee where empname like '_k%'
+select * from tblEmployee where empname like '_i_h%'
+select * from tblEmployee where empname like '_[are]%'
+select * from tblEmployee where empname like '_[^are]%'
+select * from tblEmployee where empname like 'A[^k]%'
+
+--functions
+select count(*) from tblEmployee
+
+--to update the column value of did for empid 108, 111 using various options 
+update tblEmployee set did=4 where empid=108 and empid=111
+
+update tblEmployee set did=4 where empname is null
+
+update tblEmployee set did=4 where gender is null
+select * from tblEmployee
+
+update tblEmployee set empname='Kishore' where empid=111
