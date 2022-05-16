@@ -1,0 +1,52 @@
+Group By 
+ - can group on a column/s
+ - can group only on a column/s that are in the select list
+ - will have to group  on all columns that are in the select list
+ - cannot group on an alias column
+ - can have aggregates
+ - excluding aggregates, all columns in the select list will have to be a part of group by 
+
+select col1, col4, avg(col5)
+from table
+where condition
+group by col1,col4
+having avg(col5)>/</=/<=/>=/!= (value)
+order by
+
+-Where places restriction on the number of rows to be displayed
+-having, places restriction on the number groups to be displayed
+-having works after the group is formed, where as where works before the group is formed.
+
+
+Joins: 
+
+Subquery : Query within another query
+           Enclosed in parenthesis
+           Are placed to the right side of the comparison condition/operator
+           Use single-row operators with single row subqueries and multirow operator with multi row subqueries
+
+2 types of subqueries:
+ 1. Single row : query that returns a single row
+     - can be used with single row operator(<,>,=,<=,>=,!=,<>)
+ 2. Multiple row : query that returns multiple rows
+     - can be used with multi row operator(in, any, all)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

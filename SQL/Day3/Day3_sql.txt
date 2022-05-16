@@ -1,0 +1,99 @@
+use ZensarDB
+--group by clause
+--display the count of male and female employees
+select Gender, count(gender)Total from tblEmployee
+group by gender
+--restricting groups using having clause
+select Gender, count(gender)Total from tblEmployee
+group by gender
+having count(gender)>0
+
+--the above can also be achieved as below
+select Gender, count(gender)Total from tblEmployee
+where gender is not null
+group by gender
+
+select * from tblEmployee
+--display department wise highest salary
+ select did, max(salary) from tblemployee
+ group by did
+
+--display the names of each department and the maximum salary in that department
+select  deptname, max(salary) as 'Highest Salary' from tblDepartment,tblEmployee
+where tblDepartment.DeptId=tblEmployee.DId
+group by DeptName
+
+--the above query is using joins 
+select  deptname, max(salary) as 'Highest Salary' from tblDepartment inner join tblEmployee
+on tblDepartment.DeptId=tblEmployee.DId
+group by DeptName
+
+--display the number of male and female employees in dept 2. 
+select gender,count(Gender) 'No of Employees' from tblemployee where did=2
+group by gender
+order by gender desc
+
+select did, min(salary) 'Lowest Salary' from tblemployee
+group by did
+having min(salary)<=5000
+
+--Joins
+--1. Equi Join/Natural/inner join
+--2. Cross Join (cartesan product)
+--3. outer join
+    --1.left outer
+	--2.right outer
+	--3.full outer
+--4. self join
+--1.
+Select * from tblEmployee join tblDepartment on tblEmployee.DId=tblDepartment.DeptId
+--2.
+select tblemployee.EmpName,tblEmployee.Salary,tblDepartment.DeptName from
+tblEmployee join tblDepartment on tblEmployee.DId=tblDepartment.DeptId
+--3.
+select t1.Empname,t1.salary,t2.deptname from tblEmployee t1 join tblDepartment t2
+on t1.DId=t2.DeptId
+
+select * from tblEmployee t1 join tblDepartment t2
+on t1.DId=t2.DeptId
+--left outer join
+select * from tblEmployee t1 left outer join tblDepartment t2
+on t1.DId=t2.DeptId
+
+select * from tblEmployee t1 right outer join tblDepartment t2
+on t1.DId=t2.DeptId
+
+select * from tblEmployee t1 full  join tblDepartment t2
+on t1.DId=t2.DeptId
+
+--cross join
+select * from tblDepartment,tblEmployee
+select * from tblDepartment cross join tblEmployee
+
+--self join
+-- a table joining with itself
+--you have to give an alias name to the table
+
+select t1.empid,t1.empname,t2.salary,t2.did from tblemployee t1 join tblemployee t2 on t1.Empid=t2.Mgrid
+
+--Subqueries:
+
+select salary from tblEmployee where empname ='Pavithra'
+select salary from tblEmployee where empname like 'A%'
+
+select Empname,Salary from tblEmployee where salary >6500
+
+select Empname,Salary from tblEmployee where salary >
+                                    (select salary from tblEmployee where empname like 'B%')
+
+--empnames,salary,deptid of all employees who belong to the same department as that of Revathi and their salaries should be greater than Akshay
+select Empname,Salary,Did from tblEmployee where did=(select did from tblemployee where empname='Revathi')
+                and salary>(select salary from tblemployee where empname ='Akshay')
+
+select did,min(salary) from tblemployee
+group by did
+having min(salary)>(select min(salary) from tblemployee where did=1)
+
+select Empname,Salary from tblemployee
+where salary >All(
+select salary from tblemployee where did=1)  
