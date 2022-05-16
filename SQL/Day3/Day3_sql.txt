@@ -97,3 +97,67 @@ having min(salary)>(select min(salary) from tblemployee where did=1)
 select Empname,Salary from tblemployee
 where salary >All(
 select salary from tblemployee where did=1)  
+
+Indexes :
+
+create clustered index idxdummyid on dummy(id)
+
+create nonclustered index idxnmecity on dummy(dname,city)
+drop index idxnme on dummy
+drop index idxdummyid on dummy
+
+insert into dummy values(3,'new Dummy 2','Agra')
+
+--T-sql
+/*Begin
+declare variables
+t-sql statements
+end */
+--program 1:
+Begin
+   declare @n1 int=10
+   declare @n2 int
+   set @n2=20
+   declare @result int
+   set @result=@n1+@n2
+   print @result
+   select @result
+end
+
+--program 2:
+declare @var1 int   
+declare @var2 int
+set @var1=60
+set @var2=40
+begin
+ if(@var1 > @var2)
+  begin
+  print 'Var 1 is greater'
+  select 'Var 1 is greater'
+  end
+ else
+  print 'var 2 is greater'
+end
+
+
+
+
+
+
+
+
+
+
+Identity Column
+
+create table newtable
+(nid int identity primary key,
+nname varchar(40),
+naddress varchar(50))
+
+sp_help newtable
+
+insert into newtable values('Tejasree','Hyderabad')
+
+select * from newtable
+

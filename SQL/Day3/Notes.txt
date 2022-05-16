@@ -31,6 +31,40 @@ Subquery : Query within another query
  2. Multiple row : query that returns multiple rows
      - can be used with multi row operator(in, any, all)
 
+Indexes : Speeds up the search/access of any data in a table 
+          - Enforces uniqueness of rows
+
+On indexing a column, the system creates a seperate index table
+
+Types : 2 types
+1. Clustered Index
+ - are applied automatically on the Primary key
+ - only one clustered index/table is allowed
+2.  Non Clusterd Index (can create on many columns)
+    Unique nonclustered - that creates uniquness, no duplicates
+   
+
+
+Programming with SQL is called as T-Sql(Transact Sql)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

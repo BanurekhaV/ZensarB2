@@ -1,9 +1,9 @@
 SQL Exercises 
 Two tables to be created in the database that may be used for the following exercises. Their structure is as follows: 
-EMP(empno, ename, job, age, mgr, hiredate, sal, comm., deptno) 
+EMP(empno, ename, job, age, mgr-id, hiredate, sal, comm., deptno) 
 DEPT(deptno, dname, loc) 
  These tables have the following data: 
-EMPNO   ENAME     JOB   	MGR   HIREDATE      	 SAL     COMM   DEPTNO 
+EMPNO   ENAME     JOB   	MGR-Id   HIREDATE      	 SAL     COMM   DEPTNO 
 7369    SMITH      CLERK	7902   	17-DEC-80     	 800	         20
 7499    ALLEN      SALESMAN     7698    20-FEB-81    	 1600     300    30
 7521    WARD	  SALESMAN      7698    22-FEB-81  	 1250     500    30
@@ -22,10 +22,10 @@ EMPNO   ENAME     JOB   	MGR   HIREDATE      	 SAL     COMM   DEPTNO
 
 DEPT 
 DEPTNO  DNAME        LOC 
-10     ACCOUNTING   NEW YORK 
+10     ACCOUNTING    NEW YORK 
 20     RESEARCH      DALLAS 
 30     SALES         CHICAGO 
-40     OPERATIONS   BOSTON 
+40     OPERATIONS    BOSTON 
 
 
 Write and execute the necessary SQL statements to perform the following tasks. 
