@@ -1,0 +1,168 @@
+--string functions
+select lower('HELLO WORLD')
+select upper('hello  world')
+select replace('jack and jil','j','bl')
+select substring('This is SQL Query Command',9,9)
+select ASCII('a')
+select CONCAT('Happy ', ' Birthday ' ,'To',' you', ' 17')
+
+/* Datatypes
+char(6)
+varchar(20)
+nvarchar(30)
+nvarchar(max)
+date 
+money
+time 
+ntext*/
+
+--stored procedures
+--1.
+create procedure sp_Sample
+as
+begin
+  select 'Hello and welcome to stored Proc'
+end
+
+execute sp_Sample
+
+--2.
+create or alter proc sp_deptdetails
+as
+begin
+select * from tblDepartment 
+update tblemployee set gender='Male' where empid=111
+delete from tblEmployee where empname='A'
+select * from tblEmployee
+end
+
+exec sp_deptdetails
+sp_deptdetails
+
+select * from tblEmployee
+
+drop procedure sp_deptdetails
+
+--procedures with parameters
+--1. 
+create or alter proc sp_procwith_param(@name varchar(25))
+as
+begin
+  select concat('Hello ', @name)
+end
+
+exec sp_procwith_param 'NaveenKumar'
+
+--2.
+ create or alter proc sp_findEmployee(@eid int)
+ as
+ begin
+  select * from tblEmployee where Empid=@eid
+  end
+
+
+  exec sp_findEmployee 300
+--3. Create a procedure that takes a dept id as input and displays all the employees 
+-- in that dept along with the deptname
+
+create or alter procedure sp_empdetails(@did int)
+as
+begin
+  select tblEmployee.*,tblDepartment.DeptName from tblEmployee join tblDepartment on tblEmployee.DId=tblDepartment.DeptId 
+  and tblDepartment.DeptId=@did
+  end
+
+  exec sp_empdetails 4
+
+  exec sp_empdetails @did=1
+
+  --4. procedure with more than 1 parameter
+  create or alter procedure sp_updateSalary
+  (@increment int, @eid int)
+  as
+  begin
+   declare @newsalary float
+   set @newsalary=(select Salary from tblEmployee where Empid=@eid)
+   if(@newsalary<=6000)
+    begin
+	  set @newsalary=@newsalary+@increment
+	  print @newsalary
+    end
+   else
+     begin
+	   print 'Salary is greater than 6000'
+     end
+ end
+
+ exec sp_updateSalary @increment=1000,@eid=102  --or
+ exec sp_updateSalary 1000,101
+
+ --procedures with both input and output parameters
+ create or alter proc sp_TaxCalculator
+ (@id int, @annualsalary float output, @ename varchar(30) output)
+ as
+ begin
+  declare @temp float
+  set @ename=(select empname from tblemployee where Empid=@id)
+  select @temp=(Salary *12) from tblemployee where Empid=@id
+   if(@temp>75000)
+    begin
+	--  set @annualsalary=((@temp)*10/100)
+	set @annualsalary=@temp
+    end
+   else
+    print 'No Tax Payment'
+  end 
+
+
+  begin
+  declare @Totaltax float
+  declare @name varchar(30)
+  exec sp_TaxCalculator 200,@Totaltax output, @name output
+  set @Totaltax=(@Totaltax*.10)
+  --print @Totaltax
+  --print @name
+  select concat(@name, ' has to pay tax amount of  ',@Totaltax)
+  print 'Tax Amount to be paid is ' + ' ' + cast(@Totaltax as varchar(10))
+  end
+
+  select * from tblEmployee where empid=105
+  --2. write a procedure that accepts the Empid/Empname and gives the salary of that employee
+  --as output. After receiving the output value, update that employees salary with the output value + 100 
+
+
+--procedures with return parameter
+  create or alter proc sp_getdept(@ename varchar(30))
+  as
+  begin
+   return (select Salary from tblEmployee where empname=@ename)
+  end
+
+  --to execute the above
+  declare @deptid char(7)
+  exec @deptid=sp_getdept 'Prakash'
+  select @deptid as 'Salary'
+
+  update tblEmployee set salary =7000.45 where empid=80
+
+    select * from tblEmployee
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
