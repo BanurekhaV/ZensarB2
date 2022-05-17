@@ -1,0 +1,26 @@
+string functions: 
+Data Types : 
+Stored Procedures: a set of sql statements/instructions of execution that is written once and stored as an object inside the database.
+-It can be called many time(resuability)
+-it improves performance of the query
+
+Every time a query is executed, the database engine creates a query plan of execution and then executes as per the plan - might consume more time
+
+-with stored procedures, the query plan is created only once and stored along with the object
+
+create procedure <procedurename>
+as
+begin
+sql statements
+end
+
+to execute the stored procedure
+execute <procedurename>
+exec <procedurename>
+
+1. All procedures returns an integer datatype
+2. Procedures may take parameters, and give output/s also
+3. Parameters can either be input or output or input/output
+
+note: incase we need any return values from the procedure, we can make use of the return parameter - provided the return values is integer. No other datatype is supported as a return value
+

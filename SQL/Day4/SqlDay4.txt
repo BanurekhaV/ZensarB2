@@ -148,7 +148,61 @@ begin
     select * from tblEmployee
 
 
+--2. 
+create or alter proc sp_Aggregateproc
+as
+begin
+ return(select avg(salary) from tblEmployee)
+ end
 
+ declare @tot int
+ exec @tot=sp_Aggregateproc
+ select @tot
+
+ --error handling in procedures
+ create or alter procedure My_Error_Proc
+ as
+ begin
+   begin try
+     select Salary+Empname from tblemployee where empid=111
+   end try
+   begin catch
+   -- Raiserror(15600,-1,-1,'Invalid Operation in My_Error_Proc')
+   print 'cannot add different datatypes '
+   end catch
+  end
+
+  exec My_Error_Proc
+  --2. on eror handling
+  create table Product
+  (
+  ProductId int Primary key,
+  ProductName varchar(50),
+  Price int,
+  QtyAvailable int)
+
+  insert into Product values('AAA','Pendrive',250,100),
+  (102,'Desktop',5000,40),
+  (103,'Tablet',11000,35),
+  (104,'Mobile',10000,50)
+
+  select * from product
+
+  create or alter proc product_insert
+  as
+  begin
+  begin try
+   update Product set Productname='Charger' where productid=105
+   select * from product
+    insert into Product values(106,'Pendrive',250,100)
+  end try
+  begin catch
+   print 'Primary key is either duplicated or datatype mismatch'
+   end catch
+ 
+ end
+
+ exec product_insert
 
 
 
