@@ -113,4 +113,85 @@ begin
 
  exec proc_tocall_function 200
 
+--transactions
+ begin transaction
+ insert into product values(200,'HeadPhones',3000,50)
+ save transaction t1
+ delete from tblEmployee where empid=100
+ update tblemployee set salary =6500 where empid=80
+ rollback transaction t1
+ commit
 
+
+
+ set implicit_transactions off
+ update tblemployee set salary =6000 where empid=80
+ rollback  --or 
+ commit
+ 
+ --Triggers
+ --1. 
+ create or alter trigger trginsertemployee
+ on tblemployee
+ for insert
+ as
+ begin
+  select * from inserted
+  select * from tblemployee
+  print 'I am an insert trigger'
+ end
+
+ drop trigger trginsertemployee
+
+ insert into tblEmployee values(1,'XXXX','Female',6700,'xxx@mail.com',5,'909089876')
+ update tblEmployee set Phoneno='0070070079' where empid=112
+
+ --2.
+ create trigger trgupdemployee
+ on tblemployee
+ for update
+ as
+ begin
+ select * from deleted
+ select * from inserted
+ end
+ 
+ --3. after trigger
+ create table AuditTable
+ (message nvarchar(500))
+
+ create or alter trigger trgafterdel
+ on tblemployee
+ after delete
+ as
+ begin
+ declare @id int
+ select * from deleted
+ select @id=empid from deleted
+  insert into audittable values('An existing employee with Id :' + cast(@id as nvarchar(6)) + ' is deleted at ' +
+  cast(getdate()as nvarchar(20)))
+  select * from inserted
+  select * from AuditTable
+  end
+
+  delete from tblemployee where empid=1
+
+  select * from AuditTable
+
+  --4. instead of
+  create or alter trigger trginsdept
+  on tbldepartment
+  instead of insert
+  as
+  begin
+  select ' you do not have permissions to insert a record in department table'
+   end
+
+   insert into tblDepartment values(6,'Sales','Delhi')
+   select empid,empname from tblEmployee where empid=111
+
+select * from dummy
+delete from dummy
+truncate table dummy
+drop table dummy
+insert into dummy values(1,'aa','city1'),(2,'bb','city2')

@@ -55,6 +55,42 @@ C : Consistency
 I : Isolation   - locks applied(row level, page level, table level)
 D : Durability
 
+set implicit_transaction off/on
+
+Triggers: Are also reusable piece of sql statements that get fired automatically, whenever there is any dml/ddl operations taking place on a table/database
+-They are means of enforcing business rules which cannot be done using constraints
+-Triggers are of types:
+ 1. After Trigger - fires after the dml/ddl operations are completed
+ 2. Before Trigger - fires before the actual dml/ddl operations
+ 3. Instead of Trigger - fires the trigger and not the dml/ddl operations
+
+Triggers can be written either on insert or update or delete (or for all three actions/events) on a particular relation/table
+V.Imp: Triggers create 2 magic tables automatically, which can be accessed within the body of the trigger
+-They are known as Inserted and Deleted
+
+create trigger <trigger name> on <table name> for <insert/update/delete>
+as  
+begin
+--sql statements
+end
+
+-Differences between Delete and Truncate
+
+both delete all the rows of the table
+both retains the object(structure of the table)
+
+-truncate is a DDL while delete is a DML
+-truncate cannot be given with where clause, while delete can be given
+-cannot rollback after giving truncate command
+-we can rollback after delete command
+-truncate is faster than delete
+
+Performance Tuning:
+
+
+
+
+
 
 
 

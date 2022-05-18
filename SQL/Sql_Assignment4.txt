@@ -1,0 +1,17 @@
+
+1.	Write a T-SQL Program to generate complete payslip of a given employee with respect to the following condition
+a)	HRA  as 10% Of sal
+b)	DA as  20% of sal
+c)	PF as 8% of sal
+d)	IT as 5% of sal
+e)	Deductions as sum of PF and IT
+f)	Gross Salary as sum of SAL,HRA,DA and Deductions
+g)	Net salary as  Gross salary- Deduction
+
+
+2.	Write a T-SQL Program to find the factorial of a given number.
+
+3.  	Create a stored procedure to generate multiplication tables up to a given number.
+(Hint : if number is 5, then 5*1=5
+                             5*2=10...
+                             5*10=50)
