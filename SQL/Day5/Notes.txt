@@ -1,0 +1,69 @@
+Exception Handling :
+Error Number : This is a unique identifier given for each and every error that occurs in SQL server. 
+-This value will be below 50,000 for predefined errors and must be above 50000 for user defined errors
+
+Error Message : It is a brief information describing the error occured, which should be maximum 2047 characters
+
+Severity Level : This tells about the importance of the error which ranges between 0 and 24
+  0-9 : are not severe, and considered to be as info. or status
+  11-16 : Indicates errors created by the user
+  17-19 : Indicates software errors, that cannot be corrected by the user. It must be reported to the admin
+  20-24 : Fatal errors, which can damage the system or the database. 
+
+State: It is arbitrary value that ranges between 0-127. 
+
+raise syntax : raiserror(errorid/msg,severity,state)
+
+throw syntax : throw (errorno/id,errormsg,state)
+
+to add user defined error messages. You have to add it to the sys.messages table
+
+select * from sys.messages
+
+	exec sp_addmessage 60000,13,'It is an Errormessage'
+	
+Procedures : can have input/output and return parameters(return parameter is optional and is always an integer)
+-we can have all sql statements inside the procedure
+-we can have transactions
+-we can have error handlers
+-we can call other procedures and or functions
+
+Functions: have to return one scalar data.
+- Can have only input parameters
+- can use only select statements
+- cannot be used to perform transactions/error handling
+- can be called using select where clauses only
+- we can call only other functions from within a function
+
+create function <function name> (parameter list)
+returns <scalar datatype>
+as
+begin
+--statements
+<return> --(actual returning of the value that should match the returns datatype)
+end
+
+Transactions : Are a way to ensure that a unit of work is either completely done or completely undone.
+-A unit of work means some sql statements that are likely to change the database/table contents
+-Rollback command is given to undo the changes made
+-Commit commnad is given to make the changes permanent
+Save transaction: is a logical marker that marks some statement which can be committed later
+
+Properties of Transaction : ACID
+A : Atomicity
+C : Consistency
+I : Isolation   - locks applied(row level, page level, table level)
+D : Durability
+
+
+
+
+
+
+
+
+
+
+
+
+
