@@ -1,0 +1,33 @@
+ADO : Activex Data Objects. Is a .net framework layer that helps to connect the front end application with the backend, data inorder to utilize the available data
+
+-It provides  classes, functions properties to help connect with the database and get the data
+- The important classes of ADO are :
+  - Connection : helps in connecting to the database with all required details 
+   - Data Source
+   - Database name/Initial Catalog
+   - id :
+   - password :
+
+ - Command : Helps to issue sql commands that can operate on the databse connection
+  - has methods to execute the commands
+      1. ExceuteReader() - is used to execute select command. It executes the select statement and returns an object of DataReader class     
+      2. ExecuteNonQuery() - is used to execute the dml commands. It returns an integer
+      3. ExecuteScalar() - is used to return just one value from a select command
+ - DataReader : helps to get the resultset of the query 
+
+Data Provider : provides data from any source viz.
+  1. SQL
+  2. Oracle
+  3. MySql
+  4. XML
+
+C# and MSSql Server (using System.Data.SqlClient)
+
+ - DataAdapter
+ - DataSets
+     - Data Tables
+     - Data Rows
+     - Data Columns
+     - Data Relationships
+     - Data Constraints
+
