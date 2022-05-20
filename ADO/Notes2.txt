@@ -1,0 +1,48 @@
+ADO Crud with Connected Architecture
+
+C-create
+R-read
+U-update
+D-delete
+
+Layer Programming
+
+Client
+Business Layer
+Data Access Layer
+
+Database
+
+Disconnected Architecture: works with objects like
+1. DataAdapter - works like any other adapter that acts like an interface between the source and the destination
+2. DataSet - This object acts like a container, which can consists of DataTables, DataRows, DataColumns, DataRelationship, Data Constraints
+
+Constraints are given either at the column level or at the table level
+
+create table t1
+(
+col1 datatype size,
+col2 datatype size not null,
+col3 datatype size check(col3 between 10 and 50),
+col4 datatype size 
+col5 datatype size,
+primary key(col1,col4),
+default col5('def')
+col1 references table(col1))
+
+Normalization :Decomposing a larger,complex table data into several smaller simple tables
+Functional Dependency : using this technique, we will normalize the huge data table into many simpler ones
+
+Normal Forms : 1NF, 2NF, 3NF  (4NF,5NF,BCNF)
+
+For a relation/table to be in 2NF,
+- it should already be in 1NF
+- every non-prime attribute(non key - not a primary key)should be fully functionally dependent on the primary key for a specific/single value
+- 2nf does not support patial dependecies
+
+
+
+
+
+
+
