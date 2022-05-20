@@ -1,0 +1,7 @@
+E:\Banu\Zensar\Batch 2\ADO\CRUD_Connected\CRUD_Connected\bin\Debug\CRUD_Connected.exe.config
+E:\Banu\Zensar\Batch 2\ADO\CRUD_Connected\CRUD_Connected\bin\Debug\CRUD_Connected.exe
+E:\Banu\Zensar\Batch 2\ADO\CRUD_Connected\CRUD_Connected\bin\Debug\CRUD_Connected.pdb
+E:\Banu\Zensar\Batch 2\ADO\CRUD_Connected\CRUD_Connected\obj\Debug\CRUD_Connected.csproj.AssemblyReference.cache
+E:\Banu\Zensar\Batch 2\ADO\CRUD_Connected\CRUD_Connected\obj\Debug\CRUD_Connected.csproj.CoreCompileInputs.cache
+E:\Banu\Zensar\Batch 2\ADO\CRUD_Connected\CRUD_Connected\obj\Debug\CRUD_Connected.exe
+E:\Banu\Zensar\Batch 2\ADO\CRUD_Connected\CRUD_Connected\obj\Debug\CRUD_Connected.pdb
