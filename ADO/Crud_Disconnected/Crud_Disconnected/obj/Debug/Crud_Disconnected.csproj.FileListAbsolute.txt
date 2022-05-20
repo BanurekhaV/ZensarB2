@@ -1,0 +1,7 @@
+E:\Banu\Zensar\Batch 2\ADO\Crud_Disconnected\Crud_Disconnected\bin\Debug\Crud_Disconnected.exe.config
+E:\Banu\Zensar\Batch 2\ADO\Crud_Disconnected\Crud_Disconnected\bin\Debug\Crud_Disconnected.exe
+E:\Banu\Zensar\Batch 2\ADO\Crud_Disconnected\Crud_Disconnected\bin\Debug\Crud_Disconnected.pdb
+E:\Banu\Zensar\Batch 2\ADO\Crud_Disconnected\Crud_Disconnected\obj\Debug\Crud_Disconnected.csproj.AssemblyReference.cache
+E:\Banu\Zensar\Batch 2\ADO\Crud_Disconnected\Crud_Disconnected\obj\Debug\Crud_Disconnected.csproj.CoreCompileInputs.cache
+E:\Banu\Zensar\Batch 2\ADO\Crud_Disconnected\Crud_Disconnected\obj\Debug\Crud_Disconnected.exe
+E:\Banu\Zensar\Batch 2\ADO\Crud_Disconnected\Crud_Disconnected\obj\Debug\Crud_Disconnected.pdb
