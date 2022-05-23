@@ -14,7 +14,7 @@ namespace LinqPrj
             var result = from n in numbers
                          where n > 50
                          orderby n
-                         select n.ToString();
+                         select n.ToString(); //{99,53,59}->{53,59,99}->{"53,59,99"}
 
             foreach(var item in result)
             {
