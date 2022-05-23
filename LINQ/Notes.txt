@@ -1,0 +1,225 @@
+1st NF : at the intersection of row and column, there should be precisely one and only one data
+2nd NF: all the non prime attributes should be fully and functionally dependent on the whole primary key and not partial key (partial dependencies are not allowed
+3rd NF :all non-prime attributes should not have transitive dependencies. (They should be directly dependent on the pK and not indirectly). transitive dependencies not allowed
+
+
+
+Emp: Empno,prjCode,Dept,Hours,Name,Contact
+
+Emp : Empno,Name,contact,Dept
+      -----
+Dept : Dept, DeptHead
+      -----
+Proj: Empno,Prjcode,Hours
+      ----- -------
+
+LINQ: is an Lang. Integrated Query which is
+-simple
+-easy to learn and use
+-less code
+-readable
+-standard way of querying multiple datasources
+-type safety- it provides type checking of objects at compile time
+-intellisense support
+-pure OO code
+
+ADO--->Sql Server
+ 1. Runtime Checks the syntax of SqlStatements
+ 2. Not type safe
+ 3. No intellisense support
+ 4. Debugging Sql statements not possible
+ 5. Code is always a combination of OOP and Relational Database
+
+---------------------------------------------------------------------
+1. Linq to Objects (Arrays/collections)
+2. Linq to SQL - Runtime infrastructure to access relational database (referred to as DLinq)
+3. Linq to XML
+ - Objects can be generated using a tool called as sqlMetal(it is an exe file that requires command line statements to generate the dbml file)
+4. Linq to Entities : (ORM)Entity Framework
+
+Elements Operators:
+1.  ElementAt(<index number>): returns the element at the specified position, and throws exception if the indexno/position is beyond the limit.
+2. ElementAtOrDefault(<index no>) : return the element at the specified position, else returns null. Does not throw exception
+3. First() : returns the first element in the collection, if collection is empty throws an exception
+4. FirstOrDefault() : returns the first element of the collection, if collection is empty, return default null
+5. Single() : return the element of the collection if it is the only element
+6. Aggregates like average(),sum(),count(),min(),max()
+7. Aggregate(): 
+
+Linq provides 2 different behaviours of query execution:
+Immediate and Deferred
+
+Immediate : Query is executed at the point of its declaration
+            Aggregate functions, Element Operators, To Array(),ToList(),ToDictionary()
+
+Deferred : Query is not executed at the point of declaration. But only when we access the result of the query
+  - Select,SelectMany, where
+
+
+XML: Extensible Mark up Language. 
+It is a text based mark up lang.
+It is derived from Standard Generalized Markup Lang (SGML)
+XML tags identify the data, and are used to store and organize the data, rather than specifying how to display it (like HTML)
+The format of xml is both human-readable as well as machine-readable
+
+Characteristic features:
+
+-Xml helps to create our own self-descriptive tags, or lang that suits our application
+-XML carries the data, does not present it.
+-XML is a public standard - developed by World Wide Web Consortium(W3C), and is a open source
+
+Usage of XML:
+- To simplify creation of html documents for large websites
+- Exchange of information/data between organizations and systems
+- Store and arrange the data for specific requirements
+- Can be merged with style sheets
+- Can virtually express any type of data as an xml document
+
+What is Markup?
+
+Is information added to a document that enhances its meaning in certain ways, by identifying the various parts and how they relate with each other. It is a set of symbols that can be placed in the text of a document to demarcate and label the parts of that document.
+
+<message>
+  <text> Hello World </text>
+  <address>Bangalore</address>
+</message>
+
+Sample xml document
+<?xml version="1.0"?> - document prolog
+<contact-details>
+  <name>Tanuja</name>
+  <company>Zensar</company>
+  <phone>123456</phone>
+</contact-details>
+
+
+<  &lt;
+
+&-  &amp;
+
+" -&quot;
+
+XML files can be validated against two(both are used to define the xml structure)
+ 1. DTD - Document Type Definition
+ 2. XSD - Xml Schema Definition
+
+Eg DTD :
+<?xml version="1.0"?>
+<!Doctype employee system "empsys.dtd" >
+<employee>
+ <fname>mahendra Singh</fname>
+ <lastname>Dhoni</lastname>
+ <phone>8888888</phone>
+</employee>
+
+Eg of XSD:
+<?xml version="1.0"?>
+<employee
+ xmlns="http://www.zensar.com"
+xmlns:xsi="http://www.w3.org/2001/xmlschema-instance"
+xsi:schemaLocation="http://www.zensar.com emplsys.xsd">
+<fname>dhoni</fname>
+<lname>mahendra</lname>
+<age>43</age>
+</employee>
+
+<xs:element name=class>
+ <xs:complexType>
+ <xs.sequence>
+ <xs:element name="employee" maxOccurs="unbounded" minOccurs="0">
+ <xs:element type="xs:string" name="fname"/>
+ <xs:element type="xs:int" name="age"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
