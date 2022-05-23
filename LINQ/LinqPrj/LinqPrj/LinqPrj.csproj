@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>LinqPrj.Aggregates</StartupObject>
+    <StartupObject>LinqPrj.XmL_Read_Write</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,9 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Aggregates.cs" />
+    <Compile Include="Deferred_Immediate.cs" />
     <Compile Include="LinqOperators.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XmL_Read_Write.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
