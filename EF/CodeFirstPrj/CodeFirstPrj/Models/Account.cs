@@ -12,5 +12,7 @@ namespace CodeFirstPrj.Models
         [Key]
         public int AccountNo { get; set; }
         public string AccountType { get; set; }
+
+        public float AccountBalance { get; set; }
     }
 }

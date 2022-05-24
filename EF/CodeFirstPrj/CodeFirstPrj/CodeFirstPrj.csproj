@@ -58,6 +58,10 @@
     <Compile Include="Migrations\202205240803191_Added Address to Customers.designer.cs">
       <DependentUpon>202205240803191_Added Address to Customers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205240816466_Added balance column in accounts.cs" />
+    <Compile Include="Migrations\202205240816466_Added balance column in accounts.designer.cs">
+      <DependentUpon>202205240816466_Added balance column in accounts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\AccountContext.cs" />
@@ -72,6 +76,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202205240803191_Added Address to Customers.resx">
       <DependentUpon>202205240803191_Added Address to Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205240816466_Added balance column in accounts.resx">
+      <DependentUpon>202205240816466_Added balance column in accounts.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
