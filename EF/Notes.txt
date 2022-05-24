@@ -1,0 +1,66 @@
+Entity Framework : Is an ORM based open source technique which helps in working with the underlying database without having to know much details about working with database
+
+3 approaches to work with the databses using EF
+1. Database first approach (existing database)
+2. Code First approach (no database, create thru code)
+3. Model First approach ( no databse, no code to create database)
+
+1. DBFirst approach
+ - launch visual studio 2019
+ - create a console application
+ - install Entity Framework from nuget package manager
+
+
+
+
+
+
+
+3. Model first:
+
+
+
+
+ADO(Sql) => Sql server
+ 1. runtime syntax checking
+ 2. no type safety
+ 3. no intellisense support
+ 4. debugging sql is not possible
+ 5. code is a combination of sql and oo
+
+
+Linq to SQL
+ 1. compile time syntax checking
+ 2. type safe
+ 3. intellisense support
+ 4. debugging possible
+ 5. pure oo code
+
+Tables -> classes
+Columns -> Properties
+Rows/records -> Instances
+StoredProcedure  -> methods/functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

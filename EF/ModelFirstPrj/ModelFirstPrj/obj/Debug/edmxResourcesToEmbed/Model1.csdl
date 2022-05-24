@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="Model1Container" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Books" EntityType="Model1.Book" />
+    <EntitySet Name="Publishers" EntityType="Model1.Publisher" />
+    <AssociationSet Name="PublisherBook" Association="Model1.PublisherBook">
+      <End Role="Publisher" EntitySet="Publishers" />
+      <End Role="Book" EntitySet="Books" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BookName" Type="String" Nullable="false" />
+    <Property Name="Price" Type="Single" Nullable="false" />
+    <NavigationProperty Name="Publisher" Relationship="Model1.PublisherBook" FromRole="Book" ToRole="Publisher" />
+    <Property Name="PublisherPId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Publisher">
+    <Key>
+      <PropertyRef Name="PId" />
+    </Key>
+    <Property Name="PId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PName" Type="String" Nullable="false" />
+    <Property Name="Estd" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Books" Relationship="Model1.PublisherBook" FromRole="Publisher" ToRole="Book" />
+    <Property Name="BookId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="PublisherBook">
+    <End Type="Model1.Publisher" Role="Publisher" Multiplicity="1" />
+    <End Type="Model1.Book" Role="Book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Publisher">
+        <PropertyRef Name="PId" />
+      </Principal>
+      <Dependent Role="Book">
+        <PropertyRef Name="PublisherPId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

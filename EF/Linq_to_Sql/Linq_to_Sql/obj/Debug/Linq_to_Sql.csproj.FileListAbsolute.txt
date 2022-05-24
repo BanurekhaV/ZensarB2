@@ -1,0 +1,7 @@
+E:\Banu\Zensar\Batch 2\EF\Linq_to_Sql\Linq_to_Sql\bin\Debug\Linq_to_Sql.exe.config
+E:\Banu\Zensar\Batch 2\EF\Linq_to_Sql\Linq_to_Sql\bin\Debug\Linq_to_Sql.exe
+E:\Banu\Zensar\Batch 2\EF\Linq_to_Sql\Linq_to_Sql\bin\Debug\Linq_to_Sql.pdb
+E:\Banu\Zensar\Batch 2\EF\Linq_to_Sql\Linq_to_Sql\obj\Debug\Linq_to_Sql.csproj.AssemblyReference.cache
+E:\Banu\Zensar\Batch 2\EF\Linq_to_Sql\Linq_to_Sql\obj\Debug\Linq_to_Sql.csproj.CoreCompileInputs.cache
+E:\Banu\Zensar\Batch 2\EF\Linq_to_Sql\Linq_to_Sql\obj\Debug\Linq_to_Sql.exe
+E:\Banu\Zensar\Batch 2\EF\Linq_to_Sql\Linq_to_Sql\obj\Debug\Linq_to_Sql.pdb
