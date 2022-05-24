@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ZensarDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="ProductName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Price" Type="Int32" />
+    <Property Name="QtyAvailable" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ProductSale">
+    <Key>
+      <PropertyRef Name="ProdSalesId" />
+    </Key>
+    <Property Name="ProdSalesId" Type="Int32" Nullable="false" />
+    <Property Name="productid" Type="Int32" />
+    <Property Name="qtysold" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tblDepartment">
+    <Key>
+      <PropertyRef Name="DeptId" />
+    </Key>
+    <Property Name="DeptId" Type="Int32" Nullable="false" />
+    <Property Name="DeptName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Loc_City" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tblEmployees" Relationship="Self.FK__tblEmployee__DId__403A8C7D" FromRole="tblDepartment" ToRole="tblEmployee" />
+  </EntityType>
+  <EntityType Name="tblEmployee">
+    <Key>
+      <PropertyRef Name="Empid" />
+    </Key>
+    <Property Name="Empid" Type="Int32" Nullable="false" />
+    <Property Name="EmpName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Gender" Type="String" MaxLength="7" FixedLength="true" Unicode="false" />
+    <Property Name="Salary" Type="Double" />
+    <Property Name="Email" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="DId" Type="Int32" />
+    <Property Name="Phoneno" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tblDepartment" Relationship="Self.FK__tblEmployee__DId__403A8C7D" FromRole="tblEmployee" ToRole="tblDepartment" />
+  </EntityType>
+  <Association Name="FK__tblEmployee__DId__403A8C7D">
+    <End Role="tblDepartment" Type="Self.tblDepartment" Multiplicity="0..1" />
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblDepartment">
+        <PropertyRef Name="DeptId" />
+      </Principal>
+      <Dependent Role="tblEmployee">
+        <PropertyRef Name="DId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ZensarDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="ProductSales" EntityType="Self.ProductSale" />
+    <EntitySet Name="tblDepartments" EntityType="Self.tblDepartment" />
+    <EntitySet Name="tblEmployees" EntityType="Self.tblEmployee" />
+    <AssociationSet Name="FK__tblEmployee__DId__403A8C7D" Association="Self.FK__tblEmployee__DId__403A8C7D">
+      <End Role="tblDepartment" EntitySet="tblDepartments" />
+      <End Role="tblEmployee" EntitySet="tblEmployees" />
+    </AssociationSet>
+    <FunctionImport Name="sp_deptdetails" ReturnType="Collection(ZensarDBModel.sp_deptdetails_Result)" />
+    <FunctionImport Name="sp_findEmployee" ReturnType="Collection(ZensarDBModel.sp_findEmployee_Result)">
+      <Parameter Name="eid" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="sp_deptdetails_Result">
+    <Property Type="Int32" Name="DeptId" Nullable="false" />
+    <Property Type="String" Name="DeptName" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Loc_City" Nullable="true" MaxLength="15" />
+  </ComplexType>
+  <ComplexType Name="sp_findEmployee_Result">
+    <Property Type="Int32" Name="Empid" Nullable="false" />
+    <Property Type="String" Name="EmpName" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Gender" Nullable="true" MaxLength="7" />
+    <Property Type="Double" Name="Salary" Nullable="true" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="DId" Nullable="true" />
+    <Property Type="String" Name="Phoneno" Nullable="true" MaxLength="15" />
+  </ComplexType>
+</Schema>

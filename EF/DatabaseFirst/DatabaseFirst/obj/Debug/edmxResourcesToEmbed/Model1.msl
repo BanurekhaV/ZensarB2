@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ZensarDBModelStoreContainer" CdmEntityContainer="ZensarDBEntities">
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="ZensarDBModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="QtyAvailable" ColumnName="QtyAvailable" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductSales">
+      <EntityTypeMapping TypeName="ZensarDBModel.ProductSale">
+        <MappingFragment StoreEntitySet="ProductSales">
+          <ScalarProperty Name="ProdSalesId" ColumnName="ProdSalesId" />
+          <ScalarProperty Name="productid" ColumnName="productid" />
+          <ScalarProperty Name="qtysold" ColumnName="qtysold" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDepartments">
+      <EntityTypeMapping TypeName="ZensarDBModel.tblDepartment">
+        <MappingFragment StoreEntitySet="tblDepartment">
+          <ScalarProperty Name="DeptId" ColumnName="DeptId" />
+          <ScalarProperty Name="DeptName" ColumnName="DeptName" />
+          <ScalarProperty Name="Loc_City" ColumnName="Loc_City" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmployees">
+      <EntityTypeMapping TypeName="ZensarDBModel.tblEmployee">
+        <MappingFragment StoreEntitySet="tblEmployee">
+          <ScalarProperty Name="Empid" ColumnName="Empid" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DId" ColumnName="DId" />
+          <ScalarProperty Name="Phoneno" ColumnName="Phoneno" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_deptdetails" FunctionName="ZensarDBModel.Store.sp_deptdetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ZensarDBModel.sp_deptdetails_Result">
+          <ScalarProperty Name="DeptId" ColumnName="DeptId" />
+          <ScalarProperty Name="DeptName" ColumnName="DeptName" />
+          <ScalarProperty Name="Loc_City" ColumnName="Loc_City" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_findEmployee" FunctionName="ZensarDBModel.Store.sp_findEmployee">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ZensarDBModel.sp_findEmployee_Result">
+          <ScalarProperty Name="Empid" ColumnName="Empid" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DId" ColumnName="DId" />
+          <ScalarProperty Name="Phoneno" ColumnName="Phoneno" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

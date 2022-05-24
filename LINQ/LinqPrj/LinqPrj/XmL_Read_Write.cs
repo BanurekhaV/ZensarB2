@@ -14,7 +14,9 @@ namespace LinqPrj
         static void Main()
         {
            // XMlWriter();
-            XMLReader();
+            //XMLReader();
+           // XMLSchemaWriter();
+            XMLSchemaReader();
             Console.Read();
         }
 
@@ -85,6 +87,67 @@ namespace LinqPrj
                     Console.WriteLine();
                 }
             }
+        }
+        public static void XMLSchemaWriter()
+        {
+            try
+            {
+                //create a dataset, a namespace, and a table with colns and rows
+                DataSet ds = new DataSet("DS");
+                ds.Namespace = "StdNamespace";
+                DataTable stdTable = new DataTable("Student");
+                DataColumn col1 = new DataColumn("Name");
+                DataColumn col2 = new DataColumn("Address");
+                stdTable.Columns.Add(col1);
+                stdTable.Columns.Add(col2);
+                ds.Tables.Add(stdTable);
+
+                //add student data to the table
+                DataRow newrow = stdTable.NewRow();
+                newrow["Name"] = "Ramesh";
+                newrow["Address"] = "Hyderabad";
+                stdTable.Rows.Add(newrow);
+                //2, row of details
+                newrow = stdTable.NewRow();
+                newrow["Name"] = "Girish";
+                newrow["Address"] = "Chennai";
+                stdTable.Rows.Add(newrow);
+                //3r drow of details
+                newrow = stdTable.NewRow();
+                newrow["Name"] = "Akilesh";
+                newrow["Address"] = "Kolkatta";
+                stdTable.Rows.Add(newrow);
+                ds.AcceptChanges();
+                XmlTextWriter writer = new XmlTextWriter(Console.Out);
+                ds.WriteXmlSchema(writer);
+                Console.ReadLine();
+                return;
+
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("Exception :{0}", e.ToString());
+            }
+        }
+
+        public static void XMLSchemaReader()
+        {
+            DataSet ds = new DataSet("New Dataset");
+            //read the xsl in an xml reader
+            XmlTextReader reader = new XmlTextReader(@"E:\Banu\Zensar\Batch 2\May23.xml");
+            //call read xml schema
+            ds.ReadXmlSchema(reader);
+            //StreamReader sr = new StreamReader(@"E:\Banu\Zensar\Batch 2\student.xsd");
+            //DataSet dataset = new DataSet();
+            //dataset.ReadXmlSchema(sr);
+            reader.Close();
+            // sr.Close();
+            XmlTextWriter writer = new XmlTextWriter(Console.Out);
+            ds.WriteXmlSchema(writer);
+            Console.Read();
+
+
+
         }
     }
 }
