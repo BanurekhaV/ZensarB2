@@ -1,0 +1,58 @@
+What is World Wide Web?
+ -Network of Information
+    - A uniform naming scheme for locating resources on the web (URIs)
+    - Protocols for accessing resources over the web (HTTP)
+    - Hypertext, for easy navigation among resources (HTML)
+
+URI : eg: http://www.xyz.com/mypage
+         protocol/machinename/resourcename
+uri has 2 parts : url , urn
+
+
+Network address (host id and network id)-quadrat 0-255.0-255.0-255.0-255
+172.56.78.1
+
+Domain name -> maps to an IP address (machine number)
+DHCP
+Load Balance
+
+Amazon.in -> 174.1.1.1
+             174.1.34.89
+             174.1.56.23
+
+Anatomy of page :
+ - HTML + CSS + Javascript = content + style + behaviour
+
+WebSite: 
+Web Application:
+Web Server:
+
+HTML : also known as publishing lang of the WWW
+paired tag - both opening and closing
+unpaired <br/>
+
+<html>,<head>,<body> - tags
+tags have attributes, and attributes have values
+
+<tag attribute1="value">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

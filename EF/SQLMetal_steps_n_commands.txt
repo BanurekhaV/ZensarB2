@@ -1,0 +1,25 @@
+Sql Metal : A command line tool that creates the code for LINQ-to-SQL classes(.dbml file)
+There are 2 ways to generate the LINQ-to-SQL : 1. Visual studios Linq-Sql 
+2. SqlMetal.exe
+
+step 1: search for the sqlmetal.exe under the below directory and type the command  
+
+C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools>
+sqlmetal.exe /server:DESKTOP-PU8R89M\BRSQL /database:Northwind /dbml:E:\testdbml\northwind.dbml /context:NorthwindContext
+
+2.The above command takes the server name, the database name and the location where the dbml file has to be created along with the name of the context class.
+
+3. After successfully executing the above command, you will see that the dbml file is being generated in the location specified.
+
+4.Launch a visual studio console app. 
+5.Create a folder viz. DAL
+6. Right click on the created folder -> add-> and select exixting item.
+7. It will open up the file explorer. Select the dbmlfile created above by navigating the the specific folder, and click add.
+8. Notice that all entities including the context are generated and made available under the DAL folder.
+9. We can then use the objects of context class and other model classes to do the CRUD operations.
+
+
+
+
+
+

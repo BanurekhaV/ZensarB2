@@ -1,0 +1,7 @@
+E:\Banu\Zensar\Batch 2\EF\Linq_to_Sql_Sqlmetal\Linq_to_Sql_Sqlmetal\obj\Debug\Linq_to_Sql_Sqlmetal.csproj.AssemblyReference.cache
+E:\Banu\Zensar\Batch 2\EF\Linq_to_Sql_Sqlmetal\Linq_to_Sql_Sqlmetal\obj\Debug\Linq_to_Sql_Sqlmetal.csproj.CoreCompileInputs.cache
+E:\Banu\Zensar\Batch 2\EF\Linq_to_Sql_Sqlmetal\Linq_to_Sql_Sqlmetal\bin\Debug\Linq_to_Sql_Sqlmetal.exe.config
+E:\Banu\Zensar\Batch 2\EF\Linq_to_Sql_Sqlmetal\Linq_to_Sql_Sqlmetal\bin\Debug\Linq_to_Sql_Sqlmetal.exe
+E:\Banu\Zensar\Batch 2\EF\Linq_to_Sql_Sqlmetal\Linq_to_Sql_Sqlmetal\bin\Debug\Linq_to_Sql_Sqlmetal.pdb
+E:\Banu\Zensar\Batch 2\EF\Linq_to_Sql_Sqlmetal\Linq_to_Sql_Sqlmetal\obj\Debug\Linq_to_Sql_Sqlmetal.exe
+E:\Banu\Zensar\Batch 2\EF\Linq_to_Sql_Sqlmetal\Linq_to_Sql_Sqlmetal\obj\Debug\Linq_to_Sql_Sqlmetal.pdb
