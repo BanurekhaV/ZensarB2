@@ -4,7 +4,7 @@
    - public class Enroll {
 	private Student student;
 	private Course course;
-	private LocalDate enrollmentDate;
+	private DateTime enrollmentDate;
 
 	//constructors & getters/setters
      }

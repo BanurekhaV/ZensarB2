@@ -36,6 +36,49 @@ tags have attributes, and attributes have values
 
 <tag attribute1="value">
 
+Unit of Measurements:
+px
+pts
+em
+%
+mm
+
+anchor tag <a></a> takes an compulsory attribute href to point to some other document/address
+
+<img src="path of the image"/>
+
+Lists: Ordered List (ol)type(1,2,3.., a,b,c.., A,B,.. I,II,..,i,ii.., none)
+-Unordered List (ul)type(disc,square,circle,none)
+-Descriptive List (dl) has subtags as <dt> and <dd>
+-Nested Lists
+
+Semantic Tags - tags that convey meaning to both the browser,developer
+examples: form
+table
+address
+
+Non semantic Tags -
+
+span - inline that can contain small chunk of html
+div - block line that can contain many html elements
+
+
+<div>
+<p>This<span class="myclass">is really crazy</span></p>
+
+<h1>head 1<h1>
+
+</div>
+
+Form : is container object /tag that contains various other controls/tags to accept user input
+
+html+css+js
+CSS - cascading style sheets
+are of 3 types : 1.Inline styles: declared along with the tag/element
+2. Internal styles - declared within the <style> </style> tags under <head> element, which is applicable for that page only
+    styles can target 1. Tags/elements(Tag Selectors), 2. with Ids (ID Selectors), 3. with class (Class Selectors)
+3. External Styles - declared as a seperate file(.css ext) with all styles, that can be applied to many pages with <link rel="stylesheet" type="text/css" href="<give the correct path of the .css file>"/> inside the <Head>
+  
 
 
 
