@@ -1,0 +1,62 @@
+
+Javascripts : Is an open source client side scripting language, founded Brendan. Supported by all browsers. Used to enhance the interaction of web pages with the users, making it lively, interactive and dynamic.
+Can perform calculations, validate forms, writing apps, game developments
+
+what all javascripts can do?
+ Can manipulate HTML (text,styles,tags)
+    document.getElementById(myid)
+    document.write("hello world")
+ Execute code on events like mouse and keyboard
+    onclick="myfunc()"
+    onMouseOver,OnFocus,OnBlur
+ Send requests to the server and get data/pages/messages etc...
+
+Limitations of JS
+-Cant read/write to hard disk files, copy files
+-Does not have direct access to OS
+-Does not have multiprocessing/multithreading capabilities
+
+Webpage is a document->which is an object
+
+Javascripts runs on the browsers along with the html and css.
+Can be added to any webpage using a <script> tag either in the <head> element or <body> element
+
+They can be used either as an internal script or external
+<script>
+alert("Hello World");
+</script>
+
+or as an external .js
+<script src="E:\MyjsScript.js"></script>
+
+var1=10
+var2='10'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

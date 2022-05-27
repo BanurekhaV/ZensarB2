@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--Example 1 
+    <body>
+    <h2>Javascripts</h2>
+    <p id="num">Java scripts can change HTML</p>
+    <p id="str">Name : Banurekha</p>
+    <p id="obj">Object Info : This is Object</p>
+
+    <script>
+        var length=10;
+        var name="Abdul Kalam";
+        var object={firstname:"Ramakrishna", lastname:"Paramahamsa"};
+        document.getElementById("num").innerHTML=length;
+        document.getElementById("str").innerHTML=name;
+        document.getElementById("obj").innerHTML=object.firstname + " " + object.lastname;
+    </script> 
+    <button type="button" onclick="document.getElementById('num').innerHTML=100">Click me for Number</button>
+    <br><br>
+    <button type="button" onclick="document.getElementById('num').innerHTML='Zensar'">Click me for Name</button>
+    <br><br>
+    <button type="button" onclick="document.getElementById('num').innerText='Banu' + 'Rekha'">Click me for Object Info</button>
+    <br><br>
+</body>-->
+
+<!-- Example 2 : User Input with js function
+<body>
+    Enter Data : &nbsp;<input id="userinput" size="40">
+    <button ondblclick="userSubmit()">Submit</button> <br>
+    <br>
+    <div id="result"></div>
+    <script type="text/javascript">
+      function userSubmit(){
+          var UI=document.getElementById("userinput").value;
+          document.getElementById('result').innerHTML='The User typed :' + UI;
+
+      }
+
+    </script>
+</body>-->
+
+<!--Example 3 apply style
+<body>
+<div id="chstyle"></div>
+<script>
+    document.getElementById('chstyle').innerHTML='<p><b><i><font color=blue>Hello World of JavaScript</font></i></b></p>';
+</script>
+
+</body>-->
+
+<!-- Example 5 
+<body>
+    <script>
+        function change()
+        {
+            var headings=document.getElementsByTagName('h4');
+            document.getElementById('output').innerHTML=headings[1].innerHTML;
+            alert('Changed Data..')
+        }
+    </script>
+    <p id="output">This is Javascript By Tag names</p>
+    <p>Para 2</p>
+    <p>Para 3</p>
+    <h4>Heading 4</h4>
+    <h4>One more H4</h4>
+        <h4>Value Changed</h4>
+        <button onclick="change()">Click to change Values</button>
+</body>-->
+
+<!-- Example 6 dates
+<body>
+    <h1>Date Functions</h1>
+    <p id="demo"></p>
+    <script>
+        var cd= new Date();
+        cd.setDate(cd.getDate()+350);
+        document.getElementById("demo").innerHTML=cd;
+    </script>
+</body>-->
+
+<!-- Example 7 function parameters
+<head>
+
+    <script type="text/javascript">
+       function greetings(name,age){
+           document.write(name + " " + "is" + " " + age + " " + "years old");
+       }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="greetings('Sumi',25)" value="Convey Wishes">
+</body>-->
+
+<!--Example 8 functions with return values + one function calling another
+<head>
+    <script>
+        function concat(first,last){
+            var fulldata;
+            fulldata=first+last;
+            return fulldata;
+        }
+
+        function caller(){
+            var result;
+            result=concat('Deepika','Padukone');
+            document.getElementById('show').innerText=result;
+            alert("The Concatenated Text is" + " " + result);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="caller()" value="Invoke Function"> <br><br>
+    <p id="show">Name of the Actress</p>
+</body>-->
+
+<!--Example 9 for Loops
+<body>
+    <p>Say What?</p>
+    <input id="saythis" size="30"><br>
+    <p>How many Times ?</p>
+    <select id="howmany">
+        <option value="1">One Time</option>
+        <option value="5" selected>Five Times</option>
+        <option value="10">Ten Times</option>
+        <option value="20">Twenty Times</option>
+    </select><br><br>
+    <button onclick="callLoop()">Repeat</button>
+    <br>
+  <div id="results"></div>
+
+  <script>
+      function callLoop(){
+          var saywhat=document.getElementById('saythis').value;
+          var maxtimes=document.getElementById('howmany').value;
+          var str='';
+          for(var i=1;(i<=maxtimes);i++){
+              str= str+i + ':' + ''+ ' ' +saywhat + '<br>';
+          }
+         document.getElementById('results').innerHTML=str;
+      }
+  </script>
+</body>-->
+
+<!--Example 10  If Else
+<body>
+    <script>
+        var book='Maths';
+        if(book=='History'){
+            document.write("<b>History Book</b>");
+        }
+        else if(book=="Science"){
+            document.write("<b>Science Book </b>")
+        }else
+        {
+            document.write("<b>Unknown Book </b>")
+        }
+    </script>
+    
+</body>-->
+
+<!--Example 11 switch case-->
+<body>
+    <script>
+        function switchcase(){
+        var grade='A';
+        document.write("Entering the switch block <br>");
+        switch(grade){
+            case 'A': document.write("Good Job <br>");
+            break;
+            case 'B' : document.write("Good <br>");
+            break;
+            case 'C': document.write("Fair <br>");
+            break;
+            default: document.write("Unknown Grade <br>");
+        }
+        document.write("Exitting Switch Block");
+        }
+        
+    </script>
+    <input type="button" onclick="switchcase()" value="Find Grade">
+</body>

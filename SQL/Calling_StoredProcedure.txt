@@ -1,0 +1,27 @@
+// Function to call stored procedure named 'prcgetdata' (just an example, you should call your procedure)
+
+//here i have used SqlParameter class to add a parameter instead of Parameter.AddWithValue();
+
+
+
+        private static void SelectProc()
+        {
+            con = getcon();
+            Console.WriteLine("Please Enter the Emp Code ");
+            string csvariable = Console.ReadLine();
+            //cmd = new SqlCommand("select *  from Product ");
+            cmd = new SqlCommand("prcgetdata", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@ecode", csvariable));
+                    
+            dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                //Console.WriteLine(dr[0]+" | "+dr[1]+" | "+dr[2]+" | "+dr[3]);
+                Console.WriteLine("Emp name is : " + dr[0]);
+                Console.WriteLine("Emp Salary is : " + dr[1]);
+                Console.WriteLine("Emp Department is : " + dr[2]);
+             }
+
+        }
