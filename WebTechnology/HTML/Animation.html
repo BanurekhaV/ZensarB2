@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 2s;
+            position: relative;
+        }
+        /*standard syantax */
+            @keyframes example
+            {
+                0%{
+                    background-color: red;
+                }
+                25%{
+                    background-color: yellow;
+                    left:200px;
+                    top:0px;
+                }
+                50%{
+                    background-color: blue;
+                    left:200px;
+                    top:200px;
+                    
+                }
+                75%{
+                    background-color: green;
+                    right:200px;
+                    top:200px;
+                   }
+                   100%{
+                       background-color:purple;
+                   }
+            } 
+    </style>
+</head>
+<body>
+    <p><b>IE 9.0 and above only supports Animation</b></p>
+    <div>
+        Hi!!
+    </div>
+</body>
