@@ -1,0 +1,132 @@
+-Jquery : Is a Javascript Library
+-Jquery is a lightweight lib (write less, do more)
+-Is used to make it easier to use jacascript on the websites
+-It takes the common tasks that usually require multi lines of code, wraps them into methods that can be called using singleline of code
+-Jquery simplifies lot of complicated javascript code like AJAX calls and DOM manipulation
+
+Features of JQuery:
+-HTML/DOM manipulations
+-CSS manipulation
+-Events/methods
+-Effects and Animation
+-AJAX
+-Utilities
+
+Adding Jquery to our web pages (ffrom CDNs like Google/Microsoft)
+
+1. <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> 
+</script>
+
+2. <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.4.1.min.js"> </script>
+
+Syntax: is tailor-made for selecting html elements and performimg some actions on the element
+
+$(selector).action()
+
+$- is to define/access jquery
+selector - is to either query or find a Html element
+action - action to be performed on the element
+
+eg:
+
+$(this).hide() - hides the element
+$('p').hide() - hides all paragraph element
+
+Document Ready Event
+$(document).ready(function(){
+
+});
+
+val()  text()  html()
+
+callback functions
+
+BootStrap: Free Front end framework for easier and faster development of web UI.
+Includes Design templates for HTML and CSS
+Helps in creating responsive designs
+
+
+How to include bootstraps in your web page
+
+-download from getbootstrap.com
+-<link rel="stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+layouts- grid system
+-lg - large device
+-md - medium device
+-sm - small device
+-xs - extra small
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+Containers : 2 types
+1. .container - fixed width container
+2. .container-fluid - full width container, spanning the entire width of the viewport
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
