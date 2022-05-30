@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.2.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--<script>
+    //always check if the document is ready after loading
+  /*  $(document).ready(function(){
+      $('#hide').click(function(){
+        $('p').hide();
+      });
+      $("#show").click(function(){
+       $('p').show();
+      });
+    });*/
+  
+</script>
+</head>
+<body>
+    <p>Let's Play Hide and Seek...</p><br><br>
+    <button id="hide">Hide</button><br>
+    <button id="show">Seek</button>
+</body>-->
+
+
+<!--  example 2:-->
+<script>
+$(document).ready(function(){
+  $('p').click(function(){
+    $(this).hide();
+  });
+});
+</script>
+</head>
+<body>
+    <p>If you click me, i will disappear..</p>
+    <p>Click me away ...</p>
+    <p>Click me too..</p>
+</body>
