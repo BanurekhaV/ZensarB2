@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--using jquery class toggle()-->
+<style>
+    p{
+        background-color: yellow;
+        font-size: 24px;
+        padding: 20px;
+    }
+</style>
+<script>
+    $(document).ready(function(){
+       $('button').click(function(){
+         $('p').slideToggle("slow",function(){;
+             alert("The slideToggle effect completed");
+         });
+       });
+    });
+</script>
+</head>
+<body>
+    <p>This is Paragraph</p>
+    <button>Click to Toggle</button>
+</body>

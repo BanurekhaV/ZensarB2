@@ -22,7 +22,7 @@
 </body>-->
 
 
-<!--  example 2:-->
+<!--  example 2:
 <script>
 $(document).ready(function(){
   $('p').click(function(){
@@ -35,4 +35,44 @@ $(document).ready(function(){
     <p>If you click me, i will disappear..</p>
     <p>Click me away ...</p>
     <p>Click me too..</p>
+</body>-->
+
+<!--Example 3 add-->
+<script>
+/*1.  $(document).ready(function(){
+  $('#btn1').click(function(){
+      $('p').prepend("Newly added paragraph");
+      $('h1').hide();
+  });
+  $("#btn2").click(function(){
+    $('h1').show();
+    $('ol').append("<li> New Item to the List</li>");
+  });
+ });*/
+
+// 2.
+    $(document).ready(function(){
+        $('#btn1').click(function(){
+            if($('#txtname').val== " ") 
+            console.log('no data' );         
+            $('#divmsg').html("name cannot be blank");
+            alert("Html : " + $('#divmsg').html());      
+                        
+        });
+    });
+</script>
+</head>
+<body>
+    <br>
+    <p>Jquery</p>
+<ol>
+    <li>Item A</li>
+    <li>Item B</li>
+    <li>Item C</li>
+</ol> <br>
+<input type="text" placeholder="Enter Name" id="txtname">
+<input type="button" id="btn1" value="Hide"/>
+<button id="btn2" >Show</button>
+<br>
+<div id="divmsg">Here Goes Validation</div>
 </body>
