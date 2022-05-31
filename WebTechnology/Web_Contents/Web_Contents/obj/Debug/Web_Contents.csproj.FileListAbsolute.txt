@@ -1,0 +1,7 @@
+E:\Banu\Zensar\Batch 2\WebTechnology\Web_Contents\Web_Contents\bin\Debug\Web_Contents.exe.config
+E:\Banu\Zensar\Batch 2\WebTechnology\Web_Contents\Web_Contents\bin\Debug\Web_Contents.exe
+E:\Banu\Zensar\Batch 2\WebTechnology\Web_Contents\Web_Contents\bin\Debug\Web_Contents.pdb
+E:\Banu\Zensar\Batch 2\WebTechnology\Web_Contents\Web_Contents\obj\Debug\Web_Contents.csproj.AssemblyReference.cache
+E:\Banu\Zensar\Batch 2\WebTechnology\Web_Contents\Web_Contents\obj\Debug\Web_Contents.csproj.CoreCompileInputs.cache
+E:\Banu\Zensar\Batch 2\WebTechnology\Web_Contents\Web_Contents\obj\Debug\Web_Contents.exe
+E:\Banu\Zensar\Batch 2\WebTechnology\Web_Contents\Web_Contents\obj\Debug\Web_Contents.pdb

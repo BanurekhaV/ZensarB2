@@ -1,0 +1,63 @@
+JSON: Java Script Object Notation
+-It is a format for structuring data
+-It is a simple text based format
+-It is independent of any language
+-It is easy to write and understand
+-It is Light weight
+-It supports data structures like arrays, objects
+-It executes faster on the server than XML
+-It is enclosed within { }
+-It is a name/key value pair (where keys are strings)
+
+Eg: {"id":100,"name":"Zensar","age":17,"location":null} 
+
+{
+"employee":{"name":"Banurekha","city":"Chennai","Salary":25000,"dept":null}
+}
+
+{
+"Courses":[
+{
+   "Name":"CSharp",
+   "Duration":"30hrs",
+   "fees":5000
+}],
+
+"Organization":"Udemy"
+
+}
+
+No Error Handling capabilities
+No Security
+
+Datatypes supported by JSON : string,number,objects,arrays,boolean
+
+Not supported : date, functions,undefined
+
+Important Methods :
+parse() - used to convert json into a javascript object
+
+stringify()- used to convert javascript object to string
+
+carousels
+ajax
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

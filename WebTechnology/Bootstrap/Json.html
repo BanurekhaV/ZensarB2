@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<body>
+    <h2>Parsing Json using parse()</h2>
+    <p id="demo"></p>
+    <script>
+       /* parsing to objects 
+       const mydata='{"name":"Swetha","city":"Bangalore","salary":45000}'
+        const dataobj=JSON.parse(mydata);
+        document.getElementById('demo').innerHTML=dataobj.name + " "+dataobj.city+ " " + dataobj.salary;*/
+
+        //parsing to arrays
+       /* const mydata='{"name":"Nandini","city":["Agra","Chennai","Bangalore","Hyderabad"],"salary":40000}'
+        const dataobj=JSON.parse(mydata);
+        mycity=dataobj["city"]
+       // document.getElementById('demo').innerHTML=dataobj.city[1];
+        document.getElementById('demo').innerHTML=mycity[2];*/
+
+        //stringify 1
+       /* var myvar={"Empid":101,"name":"John"};
+        data=JSON.stringify(myvar);
+        document.write("Data type is "+ typeof myvar +'<br>');
+        document.write("Data type is "+ typeof data +'<br>');
+        document.write(data);*/
+
+        //stringify 2 replacer
+        var obj={"name":"radha","age":25,"city":"pune"};
+        var text=JSON.stringify(obj,function(key,value){
+             if(key=="name"){
+                 return value.toUpperCase();
+             }
+             else{
+                 return value;
+             }
+        });
+       document.getElementById('demo').innerHTML=text
+       const dataobj={name:"Ben",date: new Date(),city:"New Jersey"};
+       const mydataobj=JSON.stringify(dataobj);
+      // document.getElementById('demo').innerHTML=mydataobj;
+       const parsedobj=JSON.parse(mydataobj);
+       document.getElementById('demo').innerHTML=parsedobj.date;
+    </script>
+</body>
