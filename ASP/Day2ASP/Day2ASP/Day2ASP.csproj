@@ -69,10 +69,12 @@
   <ItemGroup>
     <Content Include="cookiedest.aspx" />
     <Content Include="cookiesource.aspx" />
+    <Content Include="firstsession.aspx" />
     <Content Include="hiddenfield.aspx" />
     <Content Include="IntroForm.aspx" />
     <Content Include="querydest.aspx" />
     <Content Include="querysource.aspx" />
+    <Content Include="seconsession.aspx" />
     <Content Include="viewstate.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -90,6 +92,13 @@
     </Compile>
     <Compile Include="cookiesource.aspx.designer.cs">
       <DependentUpon>cookiesource.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="firstsession.aspx.cs">
+      <DependentUpon>firstsession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="firstsession.aspx.designer.cs">
+      <DependentUpon>firstsession.aspx</DependentUpon>
     </Compile>
     <Compile Include="hiddenfield.aspx.cs">
       <DependentUpon>hiddenfield.aspx</DependentUpon>
@@ -119,6 +128,13 @@
     </Compile>
     <Compile Include="querysource.aspx.designer.cs">
       <DependentUpon>querysource.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="seconsession.aspx.cs">
+      <DependentUpon>seconsession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="seconsession.aspx.designer.cs">
+      <DependentUpon>seconsession.aspx</DependentUpon>
     </Compile>
     <Compile Include="viewstate.aspx.cs">
       <DependentUpon>viewstate.aspx</DependentUpon>
