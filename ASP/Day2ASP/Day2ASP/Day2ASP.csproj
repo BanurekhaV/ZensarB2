@@ -67,12 +67,30 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="cookiedest.aspx" />
+    <Content Include="cookiesource.aspx" />
     <Content Include="hiddenfield.aspx" />
     <Content Include="IntroForm.aspx" />
+    <Content Include="querydest.aspx" />
+    <Content Include="querysource.aspx" />
     <Content Include="viewstate.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cookiedest.aspx.cs">
+      <DependentUpon>cookiedest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cookiedest.aspx.designer.cs">
+      <DependentUpon>cookiedest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cookiesource.aspx.cs">
+      <DependentUpon>cookiesource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cookiesource.aspx.designer.cs">
+      <DependentUpon>cookiesource.aspx</DependentUpon>
+    </Compile>
     <Compile Include="hiddenfield.aspx.cs">
       <DependentUpon>hiddenfield.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -88,6 +106,20 @@
       <DependentUpon>IntroForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="querydest.aspx.cs">
+      <DependentUpon>querydest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="querydest.aspx.designer.cs">
+      <DependentUpon>querydest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="querysource.aspx.cs">
+      <DependentUpon>querysource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="querysource.aspx.designer.cs">
+      <DependentUpon>querysource.aspx</DependentUpon>
+    </Compile>
     <Compile Include="viewstate.aspx.cs">
       <DependentUpon>viewstate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
