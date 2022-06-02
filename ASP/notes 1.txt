@@ -1,0 +1,82 @@
+Life Cycle of an ASP.net page
+
+S  - Start page
+I  - Initialization
+L  - Load
+V  - Validate
+E  - Event Handling
+R  - Render  - css/style is applied
+
+Web site : Collection of pages
+Web application - Business based logic
+Webserver - that hosts web sites
+WebAppServer - that hosts web application
+
+Validations: can take place either at the client side thru javascripts or at the server side thru application
+
+Templates supported : Empty, webforms, mvc, webapi, SPA
+
+Configurations :
+machine.config : one per system
+Web.config : There can be many web.config files, but the last one has the application level configuration
+
+Tracing : tracing the calls and events at the application level. For this we need to enable the trace in the web.config file
+
+<system.web>
+<trace enabled="true"/>
+
+The above creates a trace.axd file, which can be viewd like any other page
+
+State Management :
+Is the capacity of the page to retain its values across various web pages
+ 2 Types of Statemanagement
+
+1. Client side Techniques:
+      1. ViewState : is a dictionary object that can hold any data. A variable not typecasted. It can store any UDT. It stores the values in the client
+      2. Hidden Field : is a class that needs to be instantiated and all members to be initialized. More load on the system
+
+So use hiddenfield when the data that needs to be stored is less, otherwise viewstate, as it is just a variable
+
+Note: Both viewstate and hidden fields are local to the form/page. They can retain vaues of only the current page postbacks
+
+Inorder to transfer the data across pages we can use the below :
+      3. Cookies : 
+         2 types : 1. Persistant: we need to use a class called as Httpcookies, 2. Non-persistant : no need of any cookie class
+      4. Query String : carries data from pages to other pages displaying the values on the address bar. Hence sensitive data are not supposed to be sent via query string.
+
+2. Server side Techniques :
+      1. Session : 
+      2. Application : 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
