@@ -17,6 +17,6 @@ Caching : is a technique of storing frequently asked data/pages/form in memory t
   3. Data Caching
 
 @OutputCache - 
-duration
+duration - in seconds
 varyByparam-cache multiple data/responses in a single form
 
