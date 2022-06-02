@@ -1,0 +1,22 @@
+Validators:
+ 1. Required Field
+ 2. RegularExpression
+ 3. Range Validators
+ 4. Compare Validators
+ 5. Custom Validators
+ 6. Validation Summary
+
+Client Side Validation and Server Side Validation using custom validator
+
+Caching : is a technique of storing frequently asked data/pages/form in memory to avoid roundtrips to the server
+- it improves performance of the application
+
+3 types of caching:
+  1. Page Caching
+  2. Fragment Caching
+  3. Data Caching
+
+@OutputCache - 
+duration
+varyByparam-cache multiple data/responses in a single form
+
