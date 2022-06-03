@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day4WebServices", "Day4WebServices\Day4WebServices.csproj", "{C9DC0AB0-AEAD-4915-8036-EFFD7EEF9A5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day4WebService_Client", "Day4WebService_Client\Day4WebService_Client.csproj", "{5F1977DB-5603-4C2C-BA80-B18D2DCE1658}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C9DC0AB0-AEAD-4915-8036-EFFD7EEF9A5A} = {C9DC0AB0-AEAD-4915-8036-EFFD7EEF9A5A}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9DC0AB0-AEAD-4915-8036-EFFD7EEF9A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9DC0AB0-AEAD-4915-8036-EFFD7EEF9A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9DC0AB0-AEAD-4915-8036-EFFD7EEF9A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9DC0AB0-AEAD-4915-8036-EFFD7EEF9A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F1977DB-5603-4C2C-BA80-B18D2DCE1658}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F1977DB-5603-4C2C-BA80-B18D2DCE1658}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F1977DB-5603-4C2C-BA80-B18D2DCE1658}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F1977DB-5603-4C2C-BA80-B18D2DCE1658}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C2020AB-2596-4D42-8E9C-A3F14E7C7A7D}
+	EndGlobalSection
+EndGlobal

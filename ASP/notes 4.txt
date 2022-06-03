@@ -1,0 +1,28 @@
+Web Services:
+
+Web service is a software module that is intended to carry out specific ste of functions. 
+-Is a standardised method for propogating messages between client and server applications.
+-Is a set of open protocols and standards for data exchange
+-Web services can be used by software programs written in a variety of langs. and running on varitey of platforms to exchange data over the net.
+
+Functions of Web Services :
+
+-Access via internet or intranet networks
+-XML messaging is standard
+-Platform, Lang independent
+-easily locatable 
+
+Components of Web Service:
+1. SOAP - Simple Object Access Protocol (built on xml to echange soap messages)
+2. UDDI - (Universal Description,Discovery and Integration)- Is a standard for specifying, publishing and discovering a service providers online services. It serves as a database of WSDL files(Web services description Lang.)
+The UDDI registry holds the required information for the online services, just ike a telephone directory with name, address, phone nos.
+3. WSDL - (Web services description Lang.)It is an xml based file that explains what the web service does to the client application,location of the webservice and how to use it thru WSDL documents
+
+
+
+The various techniques to request and consume services/data from server:
+1. RPC - Remote Procedure Calls
+2. Remoting
+3. Web Services
+4. WCF - Windows Communication Framework
+5. Restful APi's
