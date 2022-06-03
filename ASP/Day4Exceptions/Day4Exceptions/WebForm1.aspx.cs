@@ -34,12 +34,12 @@ namespace Day4Exceptions
             //}
         }
 
-        protected void Page_Error(object sender, EventArgs e)
-        {
-             Exception ex = Server.GetLastError();
-             Server.ClearError();
-             Response.Redirect("Errors.aspx");
-            //Response.Write(ex);
-        }
+        //protected void Page_Error(object sender, EventArgs e)
+        //{
+        //     Exception ex = Server.GetLastError();
+        //     Server.ClearError();
+        //     Response.Redirect("Errors.aspx");
+        //    //Response.Write(ex);
+        //}
     }
 }

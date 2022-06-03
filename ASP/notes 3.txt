@@ -1,0 +1,66 @@
+Master Pages in ASP.Net: allows to create a consistent look and behaviour for all pages(groups of pages) in the web application.
+
+-Provides a template for other content pages(sharing of layout)
+- defines placeholders for the content, whcih can be overridden by the content pages
+- We get a combination of master page and the content pages
+- Content pages have the content to display
+- Can be nested
+- has an extention of .master
+
+<%@Master%> directive defines master page
+
+Events is ASP.Net Web Forms:
+
+Application Level : Application_Start, Session_Start, Application_Error, Session_End, Applicaton_End
+
+Page Level : Pre_int, Init, preinit_complete,Pre_pageload,  etc.... (page life cycle)
+
+Control Level : All specific to different types of controls
+
+Error Events : 
+
+Exceptions: An unforseen error in the logic of the application. When not handled, the application displays the exception using an Yellow Screen of Death
+
+Exception Handling: 1. A structured way of handling eceptions are thru try catch, finally blocks and throw
+Can be handled at Application Level, Page Level error event. 
+
+Note: the exception object has to retrieved, before the user is redirected to an error page. Because custom error page is displayed thru redirection, the cotext for the error is lost and server.GetLastError() will return nothing from the target custom error page
+
+Page_Error
+Application_Error
+
+Custom Errors: The mode attribute determines when a custom error page is displayed over the yellow screen of death
+  on- Error Pages are displayed both on the local and remote machine
+  off-Custom error pages are not displayed anywhere
+ remoteonly-custom error pages are displayed on the remote machine only, but exception page is displayed on local machine
+
+-If you handle the Application_Error() Event in global.asax, then custom error pages will have no effect
+-If you are not handling errors at the page_level, application_level, but custom errors mode is on, then only custom error pages will be activated
+-If we are handling errors at page level using a pagedirective, application level in Application_Error() Event, and also the custom error mode is on, then Page is given 1st preference, then application, then only custom errors
+
+In our application, if we want to display specific custom error pages for specific http status codes, then use custom errors.
+
+If we want only one Generic Error page, then handle it in Global.asax file.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

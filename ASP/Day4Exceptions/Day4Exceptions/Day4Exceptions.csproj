@@ -67,12 +67,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DefaultError.aspx" />
     <Content Include="Errors.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="InternalServerError.aspx" />
+    <Content Include="PageNotFoundError.aspx" />
+    <Content Include="UnauthorizedErrorPage.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DefaultError.aspx.cs">
+      <DependentUpon>DefaultError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultError.aspx.designer.cs">
+      <DependentUpon>DefaultError.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Errors.aspx.cs">
       <DependentUpon>Errors.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -83,7 +94,28 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="InternalServerError.aspx.cs">
+      <DependentUpon>InternalServerError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InternalServerError.aspx.designer.cs">
+      <DependentUpon>InternalServerError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageNotFoundError.aspx.cs">
+      <DependentUpon>PageNotFoundError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageNotFoundError.aspx.designer.cs">
+      <DependentUpon>PageNotFoundError.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnauthorizedErrorPage.aspx.cs">
+      <DependentUpon>UnauthorizedErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UnauthorizedErrorPage.aspx.designer.cs">
+      <DependentUpon>UnauthorizedErrorPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

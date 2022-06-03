@@ -32,9 +32,9 @@ namespace Day4Exceptions
 
         protected void Application_Error(object sender, EventArgs e)
         {
-           // Exception ex = Server.GetLastError();
+            Exception ex = Server.GetLastError();
            // Server.ClearError();
-           // Response.Redirect("Errors.aspx");
+         //  Response.Redirect("UnauthorizedErrorPage.aspx");
         }
 
         protected void Session_End(object sender, EventArgs e)
