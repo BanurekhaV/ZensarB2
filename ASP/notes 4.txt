@@ -26,3 +26,31 @@ The various techniques to request and consume services/data from server:
 3. Web Services
 4. WCF - Windows Communication Framework
 5. Restful APi's
+
+Steps to create a webservice application:
+
+- launch an empty asp.net(framework) project
+- add a new item (webservices.asmx) and name it as MyWebService1
+- you should notice the various decorators created for the above webservices
+- also observe your webservice is inherited from Web.Webservice
+
+- write various functions that you need it to be exposed by using [WebMethod] attribute
+- write the definitions for the functions 
+- build it
+- right click on the asmx, webservice that you created and run it with a browser.
+- you will observe the list of operations (methods)exposed by the service, also the WSDL(webservice description Lang)  file with xml tags and soap request and response objects.
+- you can actually check the functionality from the browser itself
+- if everything is working fine, create a client app to consume the webservices
+
+- add a new project or create a fresh application. Empty project
+- add  reference (service reference of the web service - URL) in the window displayed and press Go or discover.
+  You should see a list of service methods in the dialog box.
+- then give a proxy name in the text box below the dialogbox. click OK
+- Observe under connected service, you will see the proxy object (this object helps in invoking webservice functions)
+
+
+- create the required web forms to access the various functions of the webservice.
+
+Ensure server services are running.
+
+Invoke the client application and use the functionalities.
