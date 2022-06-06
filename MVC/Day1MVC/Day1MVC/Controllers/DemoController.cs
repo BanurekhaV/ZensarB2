@@ -62,5 +62,12 @@ namespace Day1MVC.Controllers
             return Redirect("/Home/About");
 
         }
+
+        public ViewResult ViewResultMethod()
+        {
+            ViewBag.ItemList = "This is ViewResult..";
+            return View();
+        }
+
     }
 }

@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Day1MVC.Models.Employee>
+@{
+    ViewBag.Title = "ListEmployee";
+}
+
+<h2 style="color:blueviolet "><strong>Employee List</strong></h2>
+
+@foreach(var e in Model)
+            {
+                <ul>
+                    <li>@e.ID</li>
+                    <li>@e.Name</li>
+                    <li>@e.Age</li>
+                </ul>
+            }
+

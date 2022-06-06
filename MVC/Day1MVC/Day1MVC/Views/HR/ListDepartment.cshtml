@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Day1MVC.Models.Department>
+@{
+    ViewBag.Title = "ListDepartment";
+}
+
+<h2>List of Department Details</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Dept No.</th>
+            <th>Department Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+            {
+                <tr>
+                    <td>@item.ID</td>
+                    <td>@item.DeptName</td>
+                </tr>
+            }
+    </tbody>
+</table>
