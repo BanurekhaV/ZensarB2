@@ -1,0 +1,51 @@
+ASP.Net MVC : Is a popular framework for developing web applications
+-It is based on Model View Controller Architecture
+-It is a successor to asp.net web forms
+
+
+It is light weight, fast, secure
+Designs and codes are neatly separated
+It uses pure HTML control or HTML Helper class(No server control/asp control)
+It uses controller based URL
+Implements no view state
+It uses Razor Syntax for customization
+It uses Layout in place of Master Pages for consistent look and feel
+It is an Open Source 
+
+We can see clear seperation of concerns as MVC - an design pattern
+
+Model : It is responsible for keeping the data (operational logic like connecting, retrieving information from the Datasource(database,class objects,xml,entities)
+
+View: It is responsible for serving web pages/User Interface(UI) to the client. It Can be a combination of both the program code and html code. The extension of view files are .cshtml. They have the same name as that of the controllers action method
+
+Controller : All Business Logics are managed here.
+-They have action methods
+-By default there is one action method called as Index()
+-All action methods are derivation of a base class called as ActionResult
+  - the various types of action methods are :
+      1. ViewResult
+      2. Empty Result 
+      3. Content Result
+      4. JSON result
+      5. File Result
+      6. Partial View
+      7. RedirectResult
+
+Controllers methods can either be action methods or non-action methods.
+Action Methods : are those methods that can be routed
+Non-Action Methods : cannot be routed
+
+
+Exercise : create a model called Product with {product id, productname, productprice}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DataController.cs" />
     <Compile Include="Controllers\DemoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HRController.cs" />
@@ -171,6 +172,10 @@
     <Content Include="Views\HR\ListDepartment.cshtml" />
     <Content Include="Views\HR\ListEmployee.cshtml" />
     <Content Include="Views\HR\DisplayEmployee.cshtml" />
+    <Content Include="Views\Data\JobRules.cshtml" />
+    <Content Include="Views\Data\JobRules2.cshtml" />
+    <Content Include="Views\Data\Test_DataTransfer.cshtml" />
+    <Content Include="Views\Data\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "JobRules2";
+}
+
+<h2>JobRules2 at the work place</h2>
+
+@foreach(var x in ViewData["Followrules"]as List<string>)
+            {
+                <p>@x</p>
+            }
+
