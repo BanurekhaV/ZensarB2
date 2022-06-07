@@ -11,9 +11,16 @@ namespace Day1MVC.Controllers
         // GET: Data
         public ActionResult Index()
         {
-            return View();
+            List<string> flowerlist = TempData["flowers"] as List<string>;
+
+            return RedirectToAction("TestAction");
         }
 
+        public ActionResult TestAction()
+        {
+            List<string> teststr = TempData["flowers"] as List<string>;
+            return View(teststr);
+        }
         public ActionResult JobRules()
         {
             List<string> rules = new List<string>()
@@ -24,7 +31,7 @@ namespace Day1MVC.Controllers
             ViewBag.Getrules = rules as List<string>;
 
             //2. using ViewData to transfer data from controller to view
-            ViewData["Followrules"] = rules as List<string>;
+          //  ViewData["Followrules"] = rules as List<string>;
             return View();
         }
 
@@ -48,6 +55,31 @@ namespace Day1MVC.Controllers
              return View(); // data1 and data2 data can be transferred to the view
 
            // return Redirect("Index");
+        }
+
+        //4. maintaining state of the page/view and transferring data to other views
+        //either within the same controller or other controllers
+        //using TempData
+        public ActionResult FirstRequest()
+        {
+            List<string> strlist = new List<string>();
+            strlist.Add("Roses");
+            strlist.Add("Jasmines");
+            strlist.Add("Lilies");
+            strlist.Add("Mogra");
+
+            TempData["flowers"] = strlist;
+            TempData.Keep();
+            return View();
+        }
+
+        public ActionResult SecondRequest()
+        {
+            //if(TempData["flowers"]==null)
+            List<string> flwlist = TempData["flowers"] as List<string>;
+            TempData.Keep();
+          //  return View(flwlist);
+            return RedirectToAction("Index");
         }
     }
 }

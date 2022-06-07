@@ -176,6 +176,9 @@
     <Content Include="Views\Data\JobRules2.cshtml" />
     <Content Include="Views\Data\Test_DataTransfer.cshtml" />
     <Content Include="Views\Data\Index.cshtml" />
+    <Content Include="Views\Data\FirstRequest.cshtml" />
+    <Content Include="Views\Data\SecondRequest.cshtml" />
+    <Content Include="Views\Data\TestAction.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
