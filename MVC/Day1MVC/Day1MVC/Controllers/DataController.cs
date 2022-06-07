@@ -12,8 +12,8 @@ namespace Day1MVC.Controllers
         public ActionResult Index()
         {
             List<string> flowerlist = TempData["flowers"] as List<string>;
-
-            return RedirectToAction("TestAction");
+           // return View(flowerlist);
+           return RedirectToAction("TestAction");
         }
 
         public ActionResult TestAction()
