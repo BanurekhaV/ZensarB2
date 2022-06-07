@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Day2EF_Prj.Models.Order>
+@{
+    ViewBag.Title = "Cust_order_Details";
+}
+
+<h2>Multiple Table Data</h2>
+
+@foreach(var item in Model)
+            {
+                <ul typeof="none">
+                <li>Order Id: @item.OrderID</li>
+                    <li>Customer Id: @item.Customer.CustomerID</li>
+                    <li>Employee First Name:@item.Employee.FirstName</li>
+                </ul>
+            }
