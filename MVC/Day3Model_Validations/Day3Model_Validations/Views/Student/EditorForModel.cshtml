@@ -1,0 +1,11 @@
+﻿@model Day3Model_Validations.Models.Student
+@{
+    ViewBag.Title = "EditorForModel";
+}
+
+<h2>EditorForModel</h2>
+@using(Html.BeginForm())
+            {
+                @Html.EditorForModel();
+    <input type="submit"/>
+            }

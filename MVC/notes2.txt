@@ -1,0 +1,34 @@
+Data Annotations: Are framework classes, that are used to implement model validations using attribute
+
+Data Repository : UI, BAL, DAL
+
+Validations: 1. HTML Validation/Java scripts(client side validation)
+             2. ASP.net MVC Model validations (server side validations)
+             3. Database Validations (server side)
+
+Built-in attributes of DataAnnotations
+1. Required
+2. Range
+3. Regular Expression
+4. Compare
+5. StringLength
+6. Data Type
+    - currency
+    - credit card number
+    - date
+    - email address
+    - custom
+    - password
+    - phoneno
+    - multiline text
+    - upload
+
+HTMLHelpers
+
+Inline Html Helpers @{}
+Built In 
+    1. Standard
+    2. Strongly typed (lambda) TextBoxFor
+    3. Templated (lambda usage with for) EditorFor
+            editorformodel
+Custom Helpers:
