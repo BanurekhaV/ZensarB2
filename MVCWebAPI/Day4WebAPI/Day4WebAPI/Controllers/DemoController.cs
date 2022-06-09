@@ -33,7 +33,7 @@ namespace Day4WebAPI.Controllers
         //PUT :api/Demo
         public IEnumerable<string>Put(int id,[FromUri] string val)
         {
-            strings[id - 1] = val;
+            strings[id-1] = val;
             return strings;
         }
 
