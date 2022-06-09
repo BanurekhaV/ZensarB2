@@ -47,7 +47,7 @@ namespace Day2EF_Prj.Controllers
             return View();
         }
 
-        [HttpPost]
+        [HttpPost,ActionName("Create")]
         //1. data from view to controller using a Model object
         //public ActionResult Create(Category c)
         //{
@@ -57,16 +57,32 @@ namespace Day2EF_Prj.Controllers
         //}
 
         //2. passing data from view to controller using parameters
-        public ActionResult Create(int CategoryID, string CategoryName,string Description)
+        //public ActionResult Create(int CategoryID, string CategoryName,string Description)
+        //{
+        //    Category c = new Category();
+        //    c.CategoryID = CategoryID;
+        //    c.CategoryName = CategoryName;
+        //    c.Description = Description;
+        //    db.Categories.Add(c);
+        //    db.SaveChanges();
+        //    return RedirectToAction("Index");
+        //}
+
+        //3. passing data from view to controller using Request Object
+
+        public ActionResult CreatePost()
         {
-            Category c = new Category();
-            c.CategoryID = CategoryID;
-            c.CategoryName = CategoryName;
-            c.Description = Description;
-            db.Categories.Add(c);
+            Category cat = new Category();
+            cat.CategoryID = Convert.ToInt32(Request["CategoryID"]);
+            cat.CategoryName = Request["CategoryName"].ToString();
+            cat.Description = Request["Description"].ToString();
+            db.Categories.Add(cat);
             db.SaveChanges();
             return RedirectToAction("Index");
+
+
         }
+
 
         // get details of category based on an given id
         public ActionResult Details(int id)

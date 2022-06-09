@@ -1,0 +1,17 @@
+﻿@using Day4Custom_Helpers.CustomClasses
+@{
+    ViewBag.Title = "CustomHelp";
+}
+
+<h2>CustomHelp</h2>
+<h2>Static Helper</h2>
+<p>
+    <b><i>Hello This is Static Custom Helpers</i></b>
+    @CustomHelper.LabelWithMark("This is an Example to Show Static Custom Helpers")
+</p>
+
+<hr />
+<h1>Extension Helpers</h1>
+<p>
+    @Html.LabelWithRed("Custom Extension Method Of the HTML Helper class")
+</p>

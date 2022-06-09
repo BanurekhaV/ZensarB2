@@ -38,7 +38,11 @@ Non-Action Methods : cannot be routed
 
 Exercise : create a model called Product with {product id, productname, productprice}
 
+Data transfer from controller to View:
+ ViewData, ViewBag, TempData
 
+Data transfer from view to controller:
+  Model Object, Parameters(the name should match the property of the model),FormCollection, Request Object)
 
 
 

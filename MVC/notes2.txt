@@ -32,3 +32,13 @@ Built In
     3. Templated (lambda usage with for) EditorFor
             editorformodel
 Custom Helpers:
+
+HTML Helpers: are framework supported class,that contains different extension methods to create different different html controls in a view. These methods return am HTML string
+
+Eg: <input type="text" name="firstname" id="firstname" value="Zensar"/>
+
+@Html.TextBox("firstname")
+
+@Html.TextBox("firstname","Zensar",new {style="background-color:Blue;color:white;font-weight:bold"})
+
+@Html.TextBox("firstname","Zensar",new {@class="bluetext",@readonly="true"})
